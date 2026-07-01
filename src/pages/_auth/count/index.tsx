@@ -19,13 +19,13 @@ const getCount = createServerFn({
 const updateCount = createServerFn({ method: 'POST' })
   .validator((d: number) => d)
   .handler(async ({ data }) => {
-    // const count = await readCount()
-    // await fs.promises.writeFile(filePath, `${count + data}`)
+    const count = await readCount()
+    await fs.promises.writeFile(filePath, `${count + data}`)
   })
 
-export const Route = createFileRoute('/$id/about')({
+export const Route = createFileRoute('/_auth/count/')({
   component: Home,
-  // loader: async () => await getCount(),
+  loader: async () => await getCount(),
 })
 
 function Home() {
@@ -36,7 +36,7 @@ function Home() {
     console.log('handleClick')
 
     updateCount({ data: 1 }).then(() => {
-      // router.invalidate()
+      router.invalidate()
     })
   }
 

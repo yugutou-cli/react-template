@@ -19,6 +19,7 @@ function LoginPage() {
   const [password, setPassword] = useState('')
   const [error, setError] = useState('')
   const [loading, setLoading] = useState(false)
+  const [showPassword, setShowPassword] = useState(false)
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault()
@@ -37,25 +38,43 @@ function LoginPage() {
   }
 
   return (
-    <div className="flex min-h-screen items-center justify-center bg-white px-4">
-      <form onSubmit={handleSubmit} className="w-full max-w-sm space-y-8">
+    <div className="relative flex min-h-screen items-center justify-center overflow-hidden bg-white px-4">
+      {/* 背景装饰 */}
+      <div className="absolute -right-32 -top-32 size-[500px] rounded-full bg-gradient-to-b from-gray-100 to-transparent opacity-60" />
+      <div className="absolute -bottom-32 -left-32 size-[400px] rounded-full bg-gradient-to-t from-gray-100 to-transparent opacity-60" />
+
+      <form onSubmit={handleSubmit} className="relative w-full max-w-sm space-y-8">
         <h1 className="text-3xl font-bold tracking-tight">登录</h1>
 
         <div className="space-y-6">
-          <input
-            type="text"
-            placeholder="用户名"
-            value={username}
-            onChange={e => setUsername(e.target.value)}
-            className="w-full border-b border-gray-300 pb-2 text-lg outline-none transition-colors focus:border-gray-900"
-          />
-          <input
-            type="password"
-            placeholder="密码"
-            value={password}
-            onChange={e => setPassword(e.target.value)}
-            className="w-full border-b border-gray-300 pb-2 text-lg outline-none transition-colors focus:border-gray-900"
-          />
+          <div className="relative">
+            <span className="iconify-[mdi--account-outline] absolute bottom-3 left-0 size-5 text-gray-400" />
+            <input
+              type="text"
+              placeholder="用户名"
+              value={username}
+              onChange={e => setUsername(e.target.value)}
+              className="w-full border-b border-gray-300 pb-2 pl-8 text-lg outline-none transition-colors focus:border-gray-900"
+            />
+          </div>
+
+          <div className="relative">
+            <span className="iconify-[mdi--lock-outline] absolute bottom-3 left-0 size-5 text-gray-400" />
+            <input
+              type={showPassword ? 'text' : 'password'}
+              placeholder="密码"
+              value={password}
+              onChange={e => setPassword(e.target.value)}
+              className="w-full border-b border-gray-300 pb-2 pl-8 pr-8 text-lg outline-none transition-colors focus:border-gray-900"
+            />
+            <button
+              type="button"
+              onClick={() => setShowPassword(!showPassword)}
+              className="absolute bottom-2 right-0 text-gray-400 transition-colors hover:text-gray-600"
+            >
+              <span className={`size-5 ${showPassword ? 'iconify-[mdi--eye-off]' : 'iconify-[mdi--eye]'}`} />
+            </button>
+          </div>
         </div>
 
         {error && <p className="text-sm text-red-500">{error}</p>}

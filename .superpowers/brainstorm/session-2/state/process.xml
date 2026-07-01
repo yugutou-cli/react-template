@@ -1,0 +1,1425 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>System.Diagnostics.Process</T>
+      <T>System.ComponentModel.Component</T>
+      <T>System.MarshalByRefObject</T>
+      <T>System.Object</T>
+    </TN>
+    <ToString>System.Diagnostics.Process (node)</ToString>
+    <Props>
+      <Obj N="SafeHandle" RefId="1">
+        <TN RefId="1">
+          <T>Microsoft.Win32.SafeHandles.SafeProcessHandle</T>
+          <T>Microsoft.Win32.SafeHandles.SafeHandleZeroOrMinusOneIsInvalid</T>
+          <T>System.Runtime.InteropServices.SafeHandle</T>
+          <T>System.Runtime.ConstrainedExecution.CriticalFinalizerObject</T>
+          <T>System.Object</T>
+        </TN>
+        <ToString>Microsoft.Win32.SafeHandles.SafeProcessHandle</ToString>
+        <Props>
+          <B N="IsInvalid">false</B>
+          <B N="IsClosed">false</B>
+        </Props>
+      </Obj>
+      <Obj N="Handle" RefId="2">
+        <TN RefId="2">
+          <T>System.IntPtr</T>
+          <T>System.ValueType</T>
+          <T>System.Object</T>
+        </TN>
+        <ToString>2104</ToString>
+      </Obj>
+      <I32 N="BasePriority">8</I32>
+      <B N="HasExited">false</B>
+      <DT N="StartTime">2026-07-01T14:19:34.26973+08:00</DT>
+      <I32 N="Id">16044</I32>
+      <S N="MachineName">.</S>
+      <Obj N="MaxWorkingSet" RefId="3">
+        <TNRef RefId="2" />
+        <ToString>1413120</ToString>
+      </Obj>
+      <Obj N="MinWorkingSet" RefId="4">
+        <TNRef RefId="2" />
+        <ToString>204800</ToString>
+      </Obj>
+      <Obj N="Modules" RefId="5">
+        <TN RefId="3">
+          <T>System.Diagnostics.ProcessModuleCollection</T>
+          <T>System.Collections.ReadOnlyCollectionBase</T>
+          <T>System.Object</T>
+        </TN>
+        <IE>
+          <Obj RefId="6">
+            <TN RefId="4">
+              <T>System.Diagnostics.ProcessModule</T>
+              <T>System.ComponentModel.Component</T>
+              <T>System.MarshalByRefObject</T>
+              <T>System.Object</T>
+            </TN>
+            <ToString>System.Diagnostics.ProcessModule (node.exe)</ToString>
+            <Props>
+              <S N="ModuleName">node.exe</S>
+              <S N="FileName">C:\Users\12202\AppData\Local\pnpm\node.exe</S>
+              <S N="BaseAddress">140703029526528</S>
+              <I32 N="ModuleMemorySize">86237184</I32>
+              <S N="EntryPointAddress">140703058239748</S>
+              <S N="FileVersionInfo">File:             C:\Users\12202\AppData\Local\pnpm\node.exe_x000D__x000A_InternalName:     node_x000D__x000A_OriginalFilename: node.exe_x000D__x000A_FileVersion:      22.14.0_x000D__x000A_FileDescription:  Node.js JavaScript Runtime_x000D__x000A_Product:          Node.js_x000D__x000A_ProductVersion:   22.14.0_x000D__x000A_Debug:            False_x000D__x000A_Patched:          False_x000D__x000A_PreRelease:       False_x000D__x000A_PrivateBuild:     False_x000D__x000A_SpecialBuild:     False_x000D__x000A_Language:         英语(美国)_x000D__x000A_</S>
+              <Nil N="Site" />
+              <Nil N="Container" />
+            </Props>
+            <MS>
+              <I32 N="Size">84216</I32>
+              <S N="Company">Node.js</S>
+              <S N="FileVersion">22.14.0</S>
+              <S N="ProductVersion">22.14.0</S>
+              <S N="Description">Node.js JavaScript Runtime</S>
+              <S N="Product">Node.js</S>
+            </MS>
+          </Obj>
+          <Obj RefId="7">
+            <TNRef RefId="4" />
+            <ToString>System.Diagnostics.ProcessModule (ntdll.dll)</ToString>
+            <Props>
+              <S N="ModuleName">ntdll.dll</S>
+              <S N="FileName">C:\WINDOWS\SYSTEM32\ntdll.dll</S>
+              <S N="BaseAddress">140720297476096</S>
+              <I32 N="ModuleMemorySize">2514944</I32>
+              <S N="EntryPointAddress">0</S>
+              <S N="FileVersionInfo">File:             C:\WINDOWS\SYSTEM32\ntdll.dll_x000D__x000A_InternalName:     ntdll.dll_x000D__x000A_OriginalFilename: ntdll.dll.mui_x000D__x000A_FileVersion:      10.0.26100.8457 (WinBuild.160101.0800)_x000D__x000A_FileDescription:  NT 层 DLL_x000D__x000A_Product:          Microsoft® Windows® Operating System_x000D__x000A_ProductVersion:   10.0.26100.8457_x000D__x000A_Debug:            False_x000D__x000A_Patched:          False_x000D__x000A_PreRelease:       False_x000D__x000A_PrivateBuild:     False_x000D__x000A_SpecialBuild:     False_x000D__x000A_Language:         简体中文(中国大陆)_x000D__x000A_</S>
+              <Nil N="Site" />
+              <Nil N="Container" />
+            </Props>
+            <MS>
+              <I32 N="Size">2456</I32>
+              <S N="Company">Microsoft Corporation</S>
+              <S N="FileVersion">10.0.26100.8457 (WinBuild.160101.0800)</S>
+              <S N="ProductVersion">10.0.26100.8457</S>
+              <S N="Description">NT 层 DLL</S>
+              <S N="Product">Microsoft® Windows® Operating System</S>
+            </MS>
+          </Obj>
+          <Obj RefId="8">
+            <TNRef RefId="4" />
+            <ToString>System.Diagnostics.ProcessModule (KERNEL32.DLL)</ToString>
+            <Props>
+              <S N="ModuleName">KERNEL32.DLL</S>
+              <S N="FileName">C:\WINDOWS\System32\KERNEL32.DLL</S>
+              <S N="BaseAddress">140720289480704</S>
+              <I32 N="ModuleMemorySize">823296</I32>
+              <S N="EntryPointAddress">140720289669536</S>
+              <S N="FileVersionInfo">File:             C:\WINDOWS\System32\KERNEL32.DLL_x000D__x000A_InternalName:     kernel32_x000D__x000A_OriginalFilename: kernel32_x000D__x000A_FileVersion:      10.0.26100.8457 (WinBuild.160101.0800)_x000D__x000A_FileDescription:  Windows NT 基本 API 客户端 DLL_x000D__x000A_Product:          Microsoft® Windows® Operating System_x000D__x000A_ProductVersion:   10.0.26100.8457_x000D__x000A_Debug:            False_x000D__x000A_Patched:          False_x000D__x000A_PreRelease:       False_x000D__x000A_PrivateBuild:     False_x000D__x000A_SpecialBuild:     False_x000D__x000A_Language:         简体中文(中国大陆)_x000D__x000A_</S>
+              <Nil N="Site" />
+              <Nil N="Container" />
+            </Props>
+            <MS>
+              <I32 N="Size">804</I32>
+              <S N="Company">Microsoft Corporation</S>
+              <S N="FileVersion">10.0.26100.8457 (WinBuild.160101.0800)</S>
+              <S N="ProductVersion">10.0.26100.8457</S>
+              <S N="Description">Windows NT 基本 API 客户端 DLL</S>
+              <S N="Product">Microsoft® Windows® Operating System</S>
+            </MS>
+          </Obj>
+          <Obj RefId="9">
+            <TNRef RefId="4" />
+            <ToString>System.Diagnostics.ProcessModule (KERNELBASE.dll)</ToString>
+            <Props>
+              <S N="ModuleName">KERNELBASE.dll</S>
+              <S N="FileName">C:\WINDOWS\System32\KERNELBASE.dll</S>
+              <S N="BaseAddress">140720256253952</S>
+              <I32 N="ModuleMemorySize">4169728</I32>
+              <S N="EntryPointAddress">140720256274976</S>
+              <S N="FileVersionInfo">File:             C:\WINDOWS\System32\KERNELBASE.dll_x000D__x000A_InternalName:     Kernelbase.dll_x000D__x000A_OriginalFilename: Kernelbase.dll.mui_x000D__x000A_FileVersion:      10.0.26100.8457 (WinBuild.160101.0800)_x000D__x000A_FileDescription:  Windows NT 基本 API 客户端 DLL_x000D__x000A_Product:          Microsoft® Windows® Operating System_x000D__x000A_ProductVersion:   10.0.26100.8457_x000D__x000A_Debug:            False_x000D__x000A_Patched:          False_x000D__x000A_PreRelease:       False_x000D__x000A_PrivateBuild:     False_x000D__x000A_SpecialBuild:     False_x000D__x000A_Language:         简体中文(中国大陆)_x000D__x000A_</S>
+              <Nil N="Site" />
+              <Nil N="Container" />
+            </Props>
+            <MS>
+              <I32 N="Size">4072</I32>
+              <S N="Company">Microsoft Corporation</S>
+              <S N="FileVersion">10.0.26100.8457 (WinBuild.160101.0800)</S>
+              <S N="ProductVersion">10.0.26100.8457</S>
+              <S N="Description">Windows NT 基本 API 客户端 DLL</S>
+              <S N="Product">Microsoft® Windows® Operating System</S>
+            </MS>
+          </Obj>
+          <Obj RefId="10">
+            <TNRef RefId="4" />
+            <ToString>System.Diagnostics.ProcessModule (WS2_32.dll)</ToString>
+            <Props>
+              <S N="ModuleName">WS2_32.dll</S>
+              <S N="FileName">C:\WINDOWS\System32\WS2_32.dll</S>
+              <S N="BaseAddress">140720287645696</S>
+              <I32 N="ModuleMemorySize">524288</I32>
+              <S N="EntryPointAddress">140720287849504</S>
+              <S N="FileVersionInfo">File:             C:\WINDOWS\System32\WS2_32.dll_x000D__x000A_InternalName:     ws2_32.dll_x000D__x000A_OriginalFilename: ws2_32.dll.mui_x000D__x000A_FileVersion:      10.0.26100.8457 (WinBuild.160101.0800)_x000D__x000A_FileDescription:  Windows Socket 2.0 32 位 DLL_x000D__x000A_Product:          Microsoft® Windows® Operating System_x000D__x000A_ProductVersion:   10.0.26100.8457_x000D__x000A_Debug:            False_x000D__x000A_Patched:          False_x000D__x000A_PreRelease:       False_x000D__x000A_PrivateBuild:     False_x000D__x000A_SpecialBuild:     False_x000D__x000A_Language:         简体中文(中国大陆)_x000D__x000A_</S>
+              <Nil N="Site" />
+              <Nil N="Container" />
+            </Props>
+            <MS>
+              <I32 N="Size">512</I32>
+              <S N="Company">Microsoft Corporation</S>
+              <S N="FileVersion">10.0.26100.8457 (WinBuild.160101.0800)</S>
+              <S N="ProductVersion">10.0.26100.8457</S>
+              <S N="Description">Windows Socket 2.0 32 位 DLL</S>
+              <S N="Product">Microsoft® Windows® Operating System</S>
+            </MS>
+          </Obj>
+          <Obj RefId="11">
+            <TNRef RefId="4" />
+            <ToString>System.Diagnostics.ProcessModule (ucrtbase.dll)</ToString>
+            <Props>
+              <S N="ModuleName">ucrtbase.dll</S>
+              <S N="FileName">C:\WINDOWS\System32\ucrtbase.dll</S>
+              <S N="BaseAddress">140720251404288</S>
+              <I32 N="ModuleMemorySize">1359872</I32>
+              <S N="EntryPointAddress">140720251812992</S>
+              <S N="FileVersionInfo">File:             C:\WINDOWS\System32\ucrtbase.dll_x000D__x000A_InternalName:     ucrtbase.dll_x000D__x000A_OriginalFilename: ucrtbase.dll_x000D__x000A_FileVersion:      10.0.26100.8521 (WinBuild.160101.0800)_x000D__x000A_FileDescription:  Microsoft® C Runtime Library_x000D__x000A_Product:          Microsoft® Windows® Operating System_x000D__x000A_ProductVersion:   10.0.26100.8521_x000D__x000A_Debug:            False_x000D__x000A_Patched:          False_x000D__x000A_PreRelease:       False_x000D__x000A_PrivateBuild:     False_x000D__x000A_SpecialBuild:     False_x000D__x000A_Language:         英语(美国)_x000D__x000A_</S>
+              <Nil N="Site" />
+              <Nil N="Container" />
+            </Props>
+            <MS>
+              <I32 N="Size">1328</I32>
+              <S N="Company">Microsoft Corporation</S>
+              <S N="FileVersion">10.0.26100.8521 (WinBuild.160101.0800)</S>
+              <S N="ProductVersion">10.0.26100.8521</S>
+              <S N="Description">Microsoft® C Runtime Library</S>
+              <S N="Product">Microsoft® Windows® Operating System</S>
+            </MS>
+          </Obj>
+          <Obj RefId="12">
+            <TNRef RefId="4" />
+            <ToString>System.Diagnostics.ProcessModule (dbghelp.dll)</ToString>
+            <Props>
+              <S N="ModuleName">dbghelp.dll</S>
+              <S N="FileName">C:\WINDOWS\SYSTEM32\dbghelp.dll</S>
+              <S N="BaseAddress">140720205529088</S>
+              <I32 N="ModuleMemorySize">2367488</I32>
+              <S N="EntryPointAddress">140720205736944</S>
+              <S N="FileVersionInfo">File:             C:\WINDOWS\SYSTEM32\dbghelp.dll_x000D__x000A_InternalName:     DBGHELP.DLL_x000D__x000A_OriginalFilename: DBGHELP.DLL_x000D__x000A_FileVersion:      10.0.26100.8328 (WinBuild.160101.0800)_x000D__x000A_FileDescription:  Windows Image Helper_x000D__x000A_Product:          Microsoft® Windows® Operating System_x000D__x000A_ProductVersion:   10.0.26100.8328_x000D__x000A_Debug:            False_x000D__x000A_Patched:          False_x000D__x000A_PreRelease:       False_x000D__x000A_PrivateBuild:     False_x000D__x000A_SpecialBuild:     False_x000D__x000A_Language:         英语(美国)_x000D__x000A_</S>
+              <Nil N="Site" />
+              <Nil N="Container" />
+            </Props>
+            <MS>
+              <I32 N="Size">2312</I32>
+              <S N="Company">Microsoft Corporation</S>
+              <S N="FileVersion">10.0.26100.8328 (WinBuild.160101.0800)</S>
+              <S N="ProductVersion">10.0.26100.8328</S>
+              <S N="Description">Windows Image Helper</S>
+              <S N="Product">Microsoft® Windows® Operating System</S>
+            </MS>
+          </Obj>
+          <Obj RefId="13">
+            <TNRef RefId="4" />
+            <ToString>System.Diagnostics.ProcessModule (RPCRT4.dll)</ToString>
+            <Props>
+              <S N="ModuleName">RPCRT4.dll</S>
+              <S N="FileName">C:\WINDOWS\System32\RPCRT4.dll</S>
+              <S N="BaseAddress">140720270802944</S>
+              <I32 N="ModuleMemorySize">1146880</I32>
+              <S N="EntryPointAddress">140720271403520</S>
+              <S N="FileVersionInfo">File:             C:\WINDOWS\System32\RPCRT4.dll_x000D__x000A_InternalName:     rpcrt4.dll_x000D__x000A_OriginalFilename: rpcrt4.dll.mui_x000D__x000A_FileVersion:      10.0.26100.8457 (WinBuild.160101.0800)_x000D__x000A_FileDescription:  远程过程调用运行时_x000D__x000A_Product:          Microsoft® Windows® Operating System_x000D__x000A_ProductVersion:   10.0.26100.8457_x000D__x000A_Debug:            False_x000D__x000A_Patched:          False_x000D__x000A_PreRelease:       False_x000D__x000A_PrivateBuild:     False_x000D__x000A_SpecialBuild:     False_x000D__x000A_Language:         简体中文(中国大陆)_x000D__x000A_</S>
+              <Nil N="Site" />
+              <Nil N="Container" />
+            </Props>
+            <MS>
+              <I32 N="Size">1120</I32>
+              <S N="Company">Microsoft Corporation</S>
+              <S N="FileVersion">10.0.26100.8457 (WinBuild.160101.0800)</S>
+              <S N="ProductVersion">10.0.26100.8457</S>
+              <S N="Description">远程过程调用运行时</S>
+              <S N="Product">Microsoft® Windows® Operating System</S>
+            </MS>
+          </Obj>
+          <Obj RefId="14">
+            <TNRef RefId="4" />
+            <ToString>System.Diagnostics.ProcessModule (combase.dll)</ToString>
+            <Props>
+              <S N="ModuleName">combase.dll</S>
+              <S N="FileName">C:\WINDOWS\System32\combase.dll</S>
+              <S N="BaseAddress">140720283516928</S>
+              <I32 N="ModuleMemorySize">3682304</I32>
+              <S N="EntryPointAddress">140720285059392</S>
+              <S N="FileVersionInfo">File:             C:\WINDOWS\System32\combase.dll_x000D__x000A_InternalName:     COMBASE.DLL_x000D__x000A_OriginalFilename: COMBASE.DLL.MUI_x000D__x000A_FileVersion:      10.0.26100.8457 (WinBuild.160101.0800)_x000D__x000A_FileDescription:  用于 Windows 的 Microsoft COM_x000D__x000A_Product:          Microsoft® Windows® Operating System_x000D__x000A_ProductVersion:   10.0.26100.8457_x000D__x000A_Debug:            False_x000D__x000A_Patched:          False_x000D__x000A_PreRelease:       False_x000D__x000A_PrivateBuild:     False_x000D__x000A_SpecialBuild:     False_x000D__x000A_Language:         简体中文(中国大陆)_x000D__x000A_</S>
+              <Nil N="Site" />
+              <Nil N="Container" />
+            </Props>
+            <MS>
+              <I32 N="Size">3596</I32>
+              <S N="Company">Microsoft Corporation</S>
+              <S N="FileVersion">10.0.26100.8457 (WinBuild.160101.0800)</S>
+              <S N="ProductVersion">10.0.26100.8457</S>
+              <S N="Description">用于 Windows 的 Microsoft COM</S>
+              <S N="Product">Microsoft® Windows® Operating System</S>
+            </MS>
+          </Obj>
+          <Obj RefId="15">
+            <TNRef RefId="4" />
+            <ToString>System.Diagnostics.ProcessModule (CRYPT32.dll)</ToString>
+            <Props>
+              <S N="ModuleName">CRYPT32.dll</S>
+              <S N="FileName">C:\WINDOWS\System32\CRYPT32.dll</S>
+              <S N="BaseAddress">140720249831424</S>
+              <I32 N="ModuleMemorySize">1540096</I32>
+              <S N="EntryPointAddress">140720250611680</S>
+              <S N="FileVersionInfo">File:             C:\WINDOWS\System32\CRYPT32.dll_x000D__x000A_InternalName:     CRYPT32.DLL_x000D__x000A_OriginalFilename: CRYPT32.DLL.MUI_x000D__x000A_FileVersion:      10.0.26100.8457 (WinBuild.160101.0800)_x000D__x000A_FileDescription:  加密 API32_x000D__x000A_Product:          Microsoft® Windows® Operating System_x000D__x000A_ProductVersion:   10.0.26100.8457_x000D__x000A_Debug:            False_x000D__x000A_Patched:          False_x000D__x000A_PreRelease:       False_x000D__x000A_PrivateBuild:     False_x000D__x000A_SpecialBuild:     False_x000D__x000A_Language:         简体中文(中国大陆)_x000D__x000A_</S>
+              <Nil N="Site" />
+              <Nil N="Container" />
+            </Props>
+            <MS>
+              <I32 N="Size">1504</I32>
+              <S N="Company">Microsoft Corporation</S>
+              <S N="FileVersion">10.0.26100.8457 (WinBuild.160101.0800)</S>
+              <S N="ProductVersion">10.0.26100.8457</S>
+              <S N="Description">加密 API32</S>
+              <S N="Product">Microsoft® Windows® Operating System</S>
+            </MS>
+          </Obj>
+          <Obj RefId="16">
+            <TNRef RefId="4" />
+            <ToString>System.Diagnostics.ProcessModule (OLEAUT32.dll)</ToString>
+            <Props>
+              <S N="ModuleName">OLEAUT32.dll</S>
+              <S N="FileName">C:\WINDOWS\System32\OLEAUT32.dll</S>
+              <S N="BaseAddress">140720282533888</S>
+              <I32 N="ModuleMemorySize">888832</I32>
+              <S N="EntryPointAddress">140720282854032</S>
+              <S N="FileVersionInfo">File:             C:\WINDOWS\System32\OLEAUT32.dll_x000D__x000A_InternalName:     OLEAUT32.DLL_x000D__x000A_OriginalFilename: OLEAUT32.DLL_x000D__x000A_FileVersion:      10.0.26100.8655 (WinBuild.160101.0800)_x000D__x000A_FileDescription:  OLEAUT32.DLL_x000D__x000A_Product:          Microsoft® Windows® Operating System_x000D__x000A_ProductVersion:   10.0.26100.8655_x000D__x000A_Debug:            False_x000D__x000A_Patched:          False_x000D__x000A_PreRelease:       False_x000D__x000A_PrivateBuild:     False_x000D__x000A_SpecialBuild:     False_x000D__x000A_Language:         英语(美国)_x000D__x000A_</S>
+              <Nil N="Site" />
+              <Nil N="Container" />
+            </Props>
+            <MS>
+              <I32 N="Size">868</I32>
+              <S N="Company">Microsoft Corporation</S>
+              <S N="FileVersion">10.0.26100.8655 (WinBuild.160101.0800)</S>
+              <S N="ProductVersion">10.0.26100.8655</S>
+              <S N="Description">OLEAUT32.DLL</S>
+              <S N="Product">Microsoft® Windows® Operating System</S>
+            </MS>
+          </Obj>
+          <Obj RefId="17">
+            <TNRef RefId="4" />
+            <ToString>System.Diagnostics.ProcessModule (ADVAPI32.dll)</ToString>
+            <Props>
+              <S N="ModuleName">ADVAPI32.dll</S>
+              <S N="FileName">C:\WINDOWS\System32\ADVAPI32.dll</S>
+              <S N="BaseAddress">140720261627904</S>
+              <I32 N="ModuleMemorySize">745472</I32>
+              <S N="EntryPointAddress">140720261763472</S>
+              <S N="FileVersionInfo">File:             C:\WINDOWS\System32\ADVAPI32.dll_x000D__x000A_InternalName:     advapi32.dll_x000D__x000A_OriginalFilename: advapi32.dll.mui_x000D__x000A_FileVersion:      10.0.26100.8457 (WinBuild.160101.0800)_x000D__x000A_FileDescription:  高级 Windows 32 基本 API_x000D__x000A_Product:          Microsoft® Windows® Operating System_x000D__x000A_ProductVersion:   10.0.26100.8457_x000D__x000A_Debug:            False_x000D__x000A_Patched:          False_x000D__x000A_PreRelease:       False_x000D__x000A_PrivateBuild:     False_x000D__x000A_SpecialBuild:     False_x000D__x000A_Language:         简体中文(中国大陆)_x000D__x000A_</S>
+              <Nil N="Site" />
+              <Nil N="Container" />
+            </Props>
+            <MS>
+              <I32 N="Size">728</I32>
+              <S N="Company">Microsoft Corporation</S>
+              <S N="FileVersion">10.0.26100.8457 (WinBuild.160101.0800)</S>
+              <S N="ProductVersion">10.0.26100.8457</S>
+              <S N="Description">高级 Windows 32 基本 API</S>
+              <S N="Product">Microsoft® Windows® Operating System</S>
+            </MS>
+          </Obj>
+          <Obj RefId="18">
+            <TNRef RefId="4" />
+            <ToString>System.Diagnostics.ProcessModule (msvcrt.dll)</ToString>
+            <Props>
+              <S N="ModuleName">msvcrt.dll</S>
+              <S N="FileName">C:\WINDOWS\System32\msvcrt.dll</S>
+              <S N="BaseAddress">140720264642560</S>
+              <I32 N="ModuleMemorySize">692224</I32>
+              <S N="EntryPointAddress">140720264673808</S>
+              <S N="FileVersionInfo">File:             C:\WINDOWS\System32\msvcrt.dll_x000D__x000A_InternalName:     msvcrt.dll_x000D__x000A_OriginalFilename: msvcrt.dll_x000D__x000A_FileVersion:      7.0.26100.8246 (WinBuild.160101.0800)_x000D__x000A_FileDescription:  Windows NT CRT DLL_x000D__x000A_Product:          Microsoft® Windows® Operating System_x000D__x000A_ProductVersion:   7.0.26100.8246_x000D__x000A_Debug:            False_x000D__x000A_Patched:          False_x000D__x000A_PreRelease:       False_x000D__x000A_PrivateBuild:     False_x000D__x000A_SpecialBuild:     False_x000D__x000A_Language:         英语(美国)_x000D__x000A_</S>
+              <Nil N="Site" />
+              <Nil N="Container" />
+            </Props>
+            <MS>
+              <I32 N="Size">676</I32>
+              <S N="Company">Microsoft Corporation</S>
+              <S N="FileVersion">7.0.26100.8246 (WinBuild.160101.0800)</S>
+              <S N="ProductVersion">7.0.26100.8246</S>
+              <S N="Description">Windows NT CRT DLL</S>
+              <S N="Product">Microsoft® Windows® Operating System</S>
+            </MS>
+          </Obj>
+          <Obj RefId="19">
+            <TNRef RefId="4" />
+            <ToString>System.Diagnostics.ProcessModule (msvcp_win.dll)</ToString>
+            <Props>
+              <S N="ModuleName">msvcp_win.dll</S>
+              <S N="FileName">C:\WINDOWS\System32\msvcp_win.dll</S>
+              <S N="BaseAddress">140720254746624</S>
+              <I32 N="ModuleMemorySize">667648</I32>
+              <S N="EntryPointAddress">140720254911584</S>
+              <S N="FileVersionInfo">File:             C:\WINDOWS\System32\msvcp_win.dll_x000D__x000A_InternalName:     msvcp_win.dll_x000D__x000A_OriginalFilename: msvcp_win.dll_x000D__x000A_FileVersion:      10.0.26100.8521 (WinBuild.160101.0800)_x000D__x000A_FileDescription:  Microsoft® C Runtime Library_x000D__x000A_Product:          Microsoft® Windows® Operating System_x000D__x000A_ProductVersion:   10.0.26100.8521_x000D__x000A_Debug:            False_x000D__x000A_Patched:          False_x000D__x000A_PreRelease:       False_x000D__x000A_PrivateBuild:     False_x000D__x000A_SpecialBuild:     False_x000D__x000A_Language:         英语(美国)_x000D__x000A_</S>
+              <Nil N="Site" />
+              <Nil N="Container" />
+            </Props>
+            <MS>
+              <I32 N="Size">652</I32>
+              <S N="Company">Microsoft Corporation</S>
+              <S N="FileVersion">10.0.26100.8521 (WinBuild.160101.0800)</S>
+              <S N="ProductVersion">10.0.26100.8521</S>
+              <S N="Description">Microsoft® C Runtime Library</S>
+              <S N="Product">Microsoft® Windows® Operating System</S>
+            </MS>
+          </Obj>
+          <Obj RefId="20">
+            <TNRef RefId="4" />
+            <ToString>System.Diagnostics.ProcessModule (sechost.dll)</ToString>
+            <Props>
+              <S N="ModuleName">sechost.dll</S>
+              <S N="FileName">C:\WINDOWS\System32\sechost.dll</S>
+              <S N="BaseAddress">140720280109056</S>
+              <I32 N="ModuleMemorySize">696320</I32>
+              <S N="EntryPointAddress">140720280278112</S>
+              <S N="FileVersionInfo">File:             C:\WINDOWS\System32\sechost.dll_x000D__x000A_InternalName:     sechost.dll_x000D__x000A_OriginalFilename: sechost.dll.mui_x000D__x000A_FileVersion:      10.0.26100.1 (WinBuild.160101.0800)_x000D__x000A_FileDescription:  Host for SCM/SDDL/LSA Lookup APIs_x000D__x000A_Product:          Microsoft® Windows® Operating System_x000D__x000A_ProductVersion:   10.0.26100.1_x000D__x000A_Debug:            False_x000D__x000A_Patched:          False_x000D__x000A_PreRelease:       False_x000D__x000A_PrivateBuild:     False_x000D__x000A_SpecialBuild:     False_x000D__x000A_Language:         英语(美国)_x000D__x000A_</S>
+              <Nil N="Site" />
+              <Nil N="Container" />
+            </Props>
+            <MS>
+              <I32 N="Size">680</I32>
+              <S N="Company">Microsoft Corporation</S>
+              <S N="FileVersion">10.0.26100.1 (WinBuild.160101.0800)</S>
+              <S N="ProductVersion">10.0.26100.1</S>
+              <S N="Description">Host for SCM/SDDL/LSA Lookup APIs</S>
+              <S N="Product">Microsoft® Windows® Operating System</S>
+            </MS>
+          </Obj>
+          <Obj RefId="21">
+            <TNRef RefId="4" />
+            <ToString>System.Diagnostics.ProcessModule (USER32.dll)</ToString>
+            <Props>
+              <S N="ModuleName">USER32.dll</S>
+              <S N="FileName">C:\WINDOWS\System32\USER32.dll</S>
+              <S N="BaseAddress">140720265363456</S>
+              <I32 N="ModuleMemorySize">1863680</I32>
+              <S N="EntryPointAddress">140720265701104</S>
+              <S N="FileVersionInfo">File:             C:\WINDOWS\System32\USER32.dll_x000D__x000A_InternalName:     user32_x000D__x000A_OriginalFilename: user32_x000D__x000A_FileVersion:      10.0.26100.8457 (WinBuild.160101.0800)_x000D__x000A_FileDescription:  多用户 Windows 用户 API 客户端 DLL_x000D__x000A_Product:          Microsoft® Windows® Operating System_x000D__x000A_ProductVersion:   10.0.26100.8457_x000D__x000A_Debug:            False_x000D__x000A_Patched:          False_x000D__x000A_PreRelease:       False_x000D__x000A_PrivateBuild:     False_x000D__x000A_SpecialBuild:     False_x000D__x000A_Language:         简体中文(中国大陆)_x000D__x000A_</S>
+              <Nil N="Site" />
+              <Nil N="Container" />
+            </Props>
+            <MS>
+              <I32 N="Size">1820</I32>
+              <S N="Company">Microsoft Corporation</S>
+              <S N="FileVersion">10.0.26100.8457 (WinBuild.160101.0800)</S>
+              <S N="ProductVersion">10.0.26100.8457</S>
+              <S N="Description">多用户 Windows 用户 API 客户端 DLL</S>
+              <S N="Product">Microsoft® Windows® Operating System</S>
+            </MS>
+          </Obj>
+          <Obj RefId="22">
+            <TNRef RefId="4" />
+            <ToString>System.Diagnostics.ProcessModule (win32u.dll)</ToString>
+            <Props>
+              <S N="ModuleName">win32u.dll</S>
+              <S N="FileName">C:\WINDOWS\System32\win32u.dll</S>
+              <S N="BaseAddress">140720256057344</S>
+              <I32 N="ModuleMemorySize">159744</I32>
+              <S N="EntryPointAddress">0</S>
+              <S N="FileVersionInfo">File:             C:\WINDOWS\System32\win32u.dll_x000D__x000A_InternalName:     Win32u_x000D__x000A_OriginalFilename: Win32u.DLL_x000D__x000A_FileVersion:      10.0.26100.8655 (WinBuild.160101.0800)_x000D__x000A_FileDescription:  Win32u_x000D__x000A_Product:          Microsoft® Windows® Operating System_x000D__x000A_ProductVersion:   10.0.26100.8655_x000D__x000A_Debug:            False_x000D__x000A_Patched:          False_x000D__x000A_PreRelease:       False_x000D__x000A_PrivateBuild:     False_x000D__x000A_SpecialBuild:     False_x000D__x000A_Language:         英语(美国)_x000D__x000A_</S>
+              <Nil N="Site" />
+              <Nil N="Container" />
+            </Props>
+            <MS>
+              <I32 N="Size">156</I32>
+              <S N="Company">Microsoft Corporation</S>
+              <S N="FileVersion">10.0.26100.8655 (WinBuild.160101.0800)</S>
+              <S N="ProductVersion">10.0.26100.8655</S>
+              <S N="Description">Win32u</S>
+              <S N="Product">Microsoft® Windows® Operating System</S>
+            </MS>
+          </Obj>
+          <Obj RefId="23">
+            <TNRef RefId="4" />
+            <ToString>System.Diagnostics.ProcessModule (GDI32.dll)</ToString>
+            <Props>
+              <S N="ModuleName">GDI32.dll</S>
+              <S N="FileName">C:\WINDOWS\System32\GDI32.dll</S>
+              <S N="BaseAddress">140720271982592</S>
+              <I32 N="ModuleMemorySize">176128</I32>
+              <S N="EntryPointAddress">140720272006864</S>
+              <S N="FileVersionInfo">File:             C:\WINDOWS\System32\GDI32.dll_x000D__x000A_InternalName:     gdi32_x000D__x000A_OriginalFilename: gdi32_x000D__x000A_FileVersion:      10.0.26100.8328 (WinBuild.160101.0800)_x000D__x000A_FileDescription:  GDI Client DLL_x000D__x000A_Product:          Microsoft® Windows® Operating System_x000D__x000A_ProductVersion:   10.0.26100.8328_x000D__x000A_Debug:            False_x000D__x000A_Patched:          False_x000D__x000A_PreRelease:       False_x000D__x000A_PrivateBuild:     False_x000D__x000A_SpecialBuild:     False_x000D__x000A_Language:         英语(美国)_x000D__x000A_</S>
+              <Nil N="Site" />
+              <Nil N="Container" />
+            </Props>
+            <MS>
+              <I32 N="Size">172</I32>
+              <S N="Company">Microsoft Corporation</S>
+              <S N="FileVersion">10.0.26100.8328 (WinBuild.160101.0800)</S>
+              <S N="ProductVersion">10.0.26100.8328</S>
+              <S N="Description">GDI Client DLL</S>
+              <S N="Product">Microsoft® Windows® Operating System</S>
+            </MS>
+          </Obj>
+          <Obj RefId="24">
+            <TNRef RefId="4" />
+            <ToString>System.Diagnostics.ProcessModule (gdi32full.dll)</ToString>
+            <Props>
+              <S N="ModuleName">gdi32full.dll</S>
+              <S N="FileName">C:\WINDOWS\System32\gdi32full.dll</S>
+              <S N="BaseAddress">140720253501440</S>
+              <I32 N="ModuleMemorySize">1224704</I32>
+              <S N="EntryPointAddress">140720254067072</S>
+              <S N="FileVersionInfo">File:             C:\WINDOWS\System32\gdi32full.dll_x000D__x000A_InternalName:     gdi32_x000D__x000A_OriginalFilename: gdi32_x000D__x000A_FileVersion:      10.0.26100.8521 (WinBuild.160101.0800)_x000D__x000A_FileDescription:  GDI Client DLL_x000D__x000A_Product:          Microsoft® Windows® Operating System_x000D__x000A_ProductVersion:   10.0.26100.8521_x000D__x000A_Debug:            False_x000D__x000A_Patched:          False_x000D__x000A_PreRelease:       False_x000D__x000A_PrivateBuild:     False_x000D__x000A_SpecialBuild:     False_x000D__x000A_Language:         英语(美国)_x000D__x000A_</S>
+              <Nil N="Site" />
+              <Nil N="Container" />
+            </Props>
+            <MS>
+              <I32 N="Size">1196</I32>
+              <S N="Company">Microsoft Corporation</S>
+              <S N="FileVersion">10.0.26100.8521 (WinBuild.160101.0800)</S>
+              <S N="ProductVersion">10.0.26100.8521</S>
+              <S N="Description">GDI Client DLL</S>
+              <S N="Product">Microsoft® Windows® Operating System</S>
+            </MS>
+          </Obj>
+          <Obj RefId="25">
+            <TNRef RefId="4" />
+            <ToString>System.Diagnostics.ProcessModule (ole32.dll)</ToString>
+            <Props>
+              <S N="ModuleName">ole32.dll</S>
+              <S N="FileName">C:\WINDOWS\System32\ole32.dll</S>
+              <S N="BaseAddress">140720280829952</S>
+              <I32 N="ModuleMemorySize">1671168</I32>
+              <S N="EntryPointAddress">140720281115792</S>
+              <S N="FileVersionInfo">File:             C:\WINDOWS\System32\ole32.dll_x000D__x000A_InternalName:     OLE32.DLL_x000D__x000A_OriginalFilename: OLE32.DLL.MUI_x000D__x000A_FileVersion:      10.0.26100.8457 (WinBuild.160101.0800)_x000D__x000A_FileDescription:  用于 Windows 的 Microsoft OLE_x000D__x000A_Product:          Microsoft® Windows® Operating System_x000D__x000A_ProductVersion:   10.0.26100.8457_x000D__x000A_Debug:            False_x000D__x000A_Patched:          False_x000D__x000A_PreRelease:       False_x000D__x000A_PrivateBuild:     False_x000D__x000A_SpecialBuild:     False_x000D__x000A_Language:         简体中文(中国大陆)_x000D__x000A_</S>
+              <Nil N="Site" />
+              <Nil N="Container" />
+            </Props>
+            <MS>
+              <I32 N="Size">1632</I32>
+              <S N="Company">Microsoft Corporation</S>
+              <S N="FileVersion">10.0.26100.8457 (WinBuild.160101.0800)</S>
+              <S N="ProductVersion">10.0.26100.8457</S>
+              <S N="Description">用于 Windows 的 Microsoft OLE</S>
+              <S N="Product">Microsoft® Windows® Operating System</S>
+            </MS>
+          </Obj>
+          <Obj RefId="26">
+            <TNRef RefId="4" />
+            <ToString>System.Diagnostics.ProcessModule (PSAPI.DLL)</ToString>
+            <Props>
+              <S N="ModuleName">PSAPI.DLL</S>
+              <S N="FileName">C:\WINDOWS\System32\PSAPI.DLL</S>
+              <S N="BaseAddress">140720296230912</S>
+              <I32 N="ModuleMemorySize">32768</I32>
+              <S N="EntryPointAddress">140720296235696</S>
+              <S N="FileVersionInfo">File:             C:\WINDOWS\System32\PSAPI.DLL_x000D__x000A_InternalName:     PSAPI_x000D__x000A_OriginalFilename: PSAPI_x000D__x000A_FileVersion:      10.0.26100.8521 (WinBuild.160101.0800)_x000D__x000A_FileDescription:  Process Status Helper_x000D__x000A_Product:          Microsoft® Windows® Operating System_x000D__x000A_ProductVersion:   10.0.26100.8521_x000D__x000A_Debug:            False_x000D__x000A_Patched:          False_x000D__x000A_PreRelease:       False_x000D__x000A_PrivateBuild:     False_x000D__x000A_SpecialBuild:     False_x000D__x000A_Language:         英语(美国)_x000D__x000A_</S>
+              <Nil N="Site" />
+              <Nil N="Container" />
+            </Props>
+            <MS>
+              <I32 N="Size">32</I32>
+              <S N="Company">Microsoft Corporation</S>
+              <S N="FileVersion">10.0.26100.8521 (WinBuild.160101.0800)</S>
+              <S N="ProductVersion">10.0.26100.8521</S>
+              <S N="Description">Process Status Helper</S>
+              <S N="Product">Microsoft® Windows® Operating System</S>
+            </MS>
+          </Obj>
+          <Obj RefId="27">
+            <TNRef RefId="4" />
+            <ToString>System.Diagnostics.ProcessModule (SHELL32.dll)</ToString>
+            <Props>
+              <S N="ModuleName">SHELL32.dll</S>
+              <S N="FileName">C:\WINDOWS\System32\SHELL32.dll</S>
+              <S N="BaseAddress">140720272179200</S>
+              <I32 N="ModuleMemorySize">7880704</I32>
+              <S N="EntryPointAddress">140720274225696</S>
+              <S N="FileVersionInfo">File:             C:\WINDOWS\System32\SHELL32.dll_x000D__x000A_InternalName:     SHELL32_x000D__x000A_OriginalFilename: SHELL32.DLL.MUI_x000D__x000A_FileVersion:      10.0.26100.8521 (WinBuild.160101.0800)_x000D__x000A_FileDescription:  Windows Shell 公用 DLL_x000D__x000A_Product:          Microsoft® Windows® Operating System_x000D__x000A_ProductVersion:   10.0.26100.8521_x000D__x000A_Debug:            False_x000D__x000A_Patched:          False_x000D__x000A_PreRelease:       False_x000D__x000A_PrivateBuild:     False_x000D__x000A_SpecialBuild:     False_x000D__x000A_Language:         简体中文(中国大陆)_x000D__x000A_</S>
+              <Nil N="Site" />
+              <Nil N="Container" />
+            </Props>
+            <MS>
+              <I32 N="Size">7696</I32>
+              <S N="Company">Microsoft Corporation</S>
+              <S N="FileVersion">10.0.26100.8521 (WinBuild.160101.0800)</S>
+              <S N="ProductVersion">10.0.26100.8521</S>
+              <S N="Description">Windows Shell 公用 DLL</S>
+              <S N="Product">Microsoft® Windows® Operating System</S>
+            </MS>
+          </Obj>
+          <Obj RefId="28">
+            <TNRef RefId="4" />
+            <ToString>System.Diagnostics.ProcessModule (IPHLPAPI.DLL)</ToString>
+            <Props>
+              <S N="ModuleName">IPHLPAPI.DLL</S>
+              <S N="FileName">C:\WINDOWS\SYSTEM32\IPHLPAPI.DLL</S>
+              <S N="BaseAddress">140720224206848</S>
+              <I32 N="ModuleMemorySize">208896</I32>
+              <S N="EntryPointAddress">140720224309664</S>
+              <S N="FileVersionInfo">File:             C:\WINDOWS\SYSTEM32\IPHLPAPI.DLL_x000D__x000A_InternalName:     iphlpapi.dll_x000D__x000A_OriginalFilename: iphlpapi.dll.mui_x000D__x000A_FileVersion:      10.0.26100.8457 (WinBuild.160101.0800)_x000D__x000A_FileDescription:  IP 帮助程序 API_x000D__x000A_Product:          Microsoft® Windows® Operating System_x000D__x000A_ProductVersion:   10.0.26100.8457_x000D__x000A_Debug:            False_x000D__x000A_Patched:          False_x000D__x000A_PreRelease:       False_x000D__x000A_PrivateBuild:     False_x000D__x000A_SpecialBuild:     False_x000D__x000A_Language:         简体中文(中国大陆)_x000D__x000A_</S>
+              <Nil N="Site" />
+              <Nil N="Container" />
+            </Props>
+            <MS>
+              <I32 N="Size">204</I32>
+              <S N="Company">Microsoft Corporation</S>
+              <S N="FileVersion">10.0.26100.8457 (WinBuild.160101.0800)</S>
+              <S N="ProductVersion">10.0.26100.8457</S>
+              <S N="Description">IP 帮助程序 API</S>
+              <S N="Product">Microsoft® Windows® Operating System</S>
+            </MS>
+          </Obj>
+          <Obj RefId="29">
+            <TNRef RefId="4" />
+            <ToString>System.Diagnostics.ProcessModule (USERENV.dll)</ToString>
+            <Props>
+              <S N="ModuleName">USERENV.dll</S>
+              <S N="FileName">C:\WINDOWS\SYSTEM32\USERENV.dll</S>
+              <S N="BaseAddress">140720236920832</S>
+              <I32 N="ModuleMemorySize">208896</I32>
+              <S N="EntryPointAddress">140720236980448</S>
+              <S N="FileVersionInfo">File:             C:\WINDOWS\SYSTEM32\USERENV.dll_x000D__x000A_InternalName:     userenv_x000D__x000A_OriginalFilename: userenv.dll.mui_x000D__x000A_FileVersion:      10.0.26100.8457 (WinBuild.160101.0800)_x000D__x000A_FileDescription:  Userenv_x000D__x000A_Product:          Microsoft® Windows® Operating System_x000D__x000A_ProductVersion:   10.0.26100.8457_x000D__x000A_Debug:            False_x000D__x000A_Patched:          False_x000D__x000A_PreRelease:       False_x000D__x000A_PrivateBuild:     False_x000D__x000A_SpecialBuild:     False_x000D__x000A_Language:         简体中文(中国大陆)_x000D__x000A_</S>
+              <Nil N="Site" />
+              <Nil N="Container" />
+            </Props>
+            <MS>
+              <I32 N="Size">204</I32>
+              <S N="Company">Microsoft Corporation</S>
+              <S N="FileVersion">10.0.26100.8457 (WinBuild.160101.0800)</S>
+              <S N="ProductVersion">10.0.26100.8457</S>
+              <S N="Description">Userenv</S>
+              <S N="Product">Microsoft® Windows® Operating System</S>
+            </MS>
+          </Obj>
+          <Obj RefId="30">
+            <TNRef RefId="4" />
+            <ToString>System.Diagnostics.ProcessModule (bcrypt.dll)</ToString>
+            <Props>
+              <S N="ModuleName">bcrypt.dll</S>
+              <S N="FileName">C:\WINDOWS\SYSTEM32\bcrypt.dll</S>
+              <S N="BaseAddress">140720248717312</S>
+              <I32 N="ModuleMemorySize">172032</I32>
+              <S N="EntryPointAddress">140720248787264</S>
+              <S N="FileVersionInfo">File:             C:\WINDOWS\SYSTEM32\bcrypt.dll_x000D__x000A_InternalName:     bcrypt.dll_x000D__x000A_OriginalFilename: bcrypt.dll.mui_x000D__x000A_FileVersion:      10.0.26100.8457 (WinBuild.160101.0800)_x000D__x000A_FileDescription:  Windows 加密基元库_x000D__x000A_Product:          Microsoft® Windows® Operating System_x000D__x000A_ProductVersion:   10.0.26100.8457_x000D__x000A_Debug:            False_x000D__x000A_Patched:          False_x000D__x000A_PreRelease:       False_x000D__x000A_PrivateBuild:     False_x000D__x000A_SpecialBuild:     False_x000D__x000A_Language:         简体中文(中国大陆)_x000D__x000A_</S>
+              <Nil N="Site" />
+              <Nil N="Container" />
+            </Props>
+            <MS>
+              <I32 N="Size">168</I32>
+              <S N="Company">Microsoft Corporation</S>
+              <S N="FileVersion">10.0.26100.8457 (WinBuild.160101.0800)</S>
+              <S N="ProductVersion">10.0.26100.8457</S>
+              <S N="Description">Windows 加密基元库</S>
+              <S N="Product">Microsoft® Windows® Operating System</S>
+            </MS>
+          </Obj>
+          <Obj RefId="31">
+            <TNRef RefId="4" />
+            <ToString>System.Diagnostics.ProcessModule (WINMM.dll)</ToString>
+            <Props>
+              <S N="ModuleName">WINMM.dll</S>
+              <S N="FileName">C:\WINDOWS\SYSTEM32\WINMM.dll</S>
+              <S N="BaseAddress">140720062726144</S>
+              <I32 N="ModuleMemorySize">221184</I32>
+              <S N="EntryPointAddress">140720062779824</S>
+              <S N="FileVersionInfo">File:             C:\WINDOWS\SYSTEM32\WINMM.dll_x000D__x000A_InternalName:     winmm.dll_x000D__x000A_OriginalFilename: WINMM.DLL.MUI_x000D__x000A_FileVersion:      10.0.26100.8457 (WinBuild.160101.0800)_x000D__x000A_FileDescription:  MCI API DLL_x000D__x000A_Product:          Microsoft® Windows® Operating System_x000D__x000A_ProductVersion:   10.0.26100.8457_x000D__x000A_Debug:            False_x000D__x000A_Patched:          False_x000D__x000A_PreRelease:       False_x000D__x000A_PrivateBuild:     False_x000D__x000A_SpecialBuild:     False_x000D__x000A_Language:         简体中文(中国大陆)_x000D__x000A_</S>
+              <Nil N="Site" />
+              <Nil N="Container" />
+            </Props>
+            <MS>
+              <I32 N="Size">216</I32>
+              <S N="Company">Microsoft Corporation</S>
+              <S N="FileVersion">10.0.26100.8457 (WinBuild.160101.0800)</S>
+              <S N="ProductVersion">10.0.26100.8457</S>
+              <S N="Description">MCI API DLL</S>
+              <S N="Product">Microsoft® Windows® Operating System</S>
+            </MS>
+          </Obj>
+          <Obj RefId="32">
+            <TNRef RefId="4" />
+            <ToString>System.Diagnostics.ProcessModule (dbgcore.DLL)</ToString>
+            <Props>
+              <S N="ModuleName">dbgcore.DLL</S>
+              <S N="FileName">C:\WINDOWS\SYSTEM32\dbgcore.DLL</S>
+              <S N="BaseAddress">140719870836736</S>
+              <I32 N="ModuleMemorySize">241664</I32>
+              <S N="EntryPointAddress">140719870842928</S>
+              <S N="FileVersionInfo">File:             C:\WINDOWS\SYSTEM32\dbgcore.DLL_x000D__x000A_InternalName:     DBGCORE.DLL_x000D__x000A_OriginalFilename: DBGCORE.DLL_x000D__x000A_FileVersion:      10.0.26100.8521 (WinBuild.160101.0800)_x000D__x000A_FileDescription:  Windows Core Debugging Helpers_x000D__x000A_Product:          Microsoft® Windows® Operating System_x000D__x000A_ProductVersion:   10.0.26100.8521_x000D__x000A_Debug:            False_x000D__x000A_Patched:          False_x000D__x000A_PreRelease:       False_x000D__x000A_PrivateBuild:     False_x000D__x000A_SpecialBuild:     False_x000D__x000A_Language:         英语(美国)_x000D__x000A_</S>
+              <Nil N="Site" />
+              <Nil N="Container" />
+            </Props>
+            <MS>
+              <I32 N="Size">236</I32>
+              <S N="Company">Microsoft Corporation</S>
+              <S N="FileVersion">10.0.26100.8521 (WinBuild.160101.0800)</S>
+              <S N="ProductVersion">10.0.26100.8521</S>
+              <S N="Description">Windows Core Debugging Helpers</S>
+              <S N="Product">Microsoft® Windows® Operating System</S>
+            </MS>
+          </Obj>
+          <Obj RefId="33">
+            <TNRef RefId="4" />
+            <ToString>System.Diagnostics.ProcessModule (CRYPTBASE.DLL)</ToString>
+            <Props>
+              <S N="ModuleName">CRYPTBASE.DLL</S>
+              <S N="FileName">C:\WINDOWS\SYSTEM32\CRYPTBASE.DLL</S>
+              <S N="BaseAddress">140720239345664</S>
+              <I32 N="ModuleMemorySize">49152</I32>
+              <S N="EntryPointAddress">140720239350240</S>
+              <S N="FileVersionInfo">File:             C:\WINDOWS\SYSTEM32\CRYPTBASE.DLL_x000D__x000A_InternalName:     cryptbase.dll_x000D__x000A_OriginalFilename: cryptbase.dll_x000D__x000A_FileVersion:      10.0.26100.8246 (WinBuild.160101.0800)_x000D__x000A_FileDescription:  Base cryptographic API DLL_x000D__x000A_Product:          Microsoft® Windows® Operating System_x000D__x000A_ProductVersion:   10.0.26100.8246_x000D__x000A_Debug:            False_x000D__x000A_Patched:          False_x000D__x000A_PreRelease:       False_x000D__x000A_PrivateBuild:     False_x000D__x000A_SpecialBuild:     False_x000D__x000A_Language:         英语(美国)_x000D__x000A_</S>
+              <Nil N="Site" />
+              <Nil N="Container" />
+            </Props>
+            <MS>
+              <I32 N="Size">48</I32>
+              <S N="Company">Microsoft Corporation</S>
+              <S N="FileVersion">10.0.26100.8246 (WinBuild.160101.0800)</S>
+              <S N="ProductVersion">10.0.26100.8246</S>
+              <S N="Description">Base cryptographic API DLL</S>
+              <S N="Product">Microsoft® Windows® Operating System</S>
+            </MS>
+          </Obj>
+          <Obj RefId="34">
+            <TNRef RefId="4" />
+            <ToString>System.Diagnostics.ProcessModule (IMM32.DLL)</ToString>
+            <Props>
+              <S N="ModuleName">IMM32.DLL</S>
+              <S N="FileName">C:\WINDOWS\System32\IMM32.DLL</S>
+              <S N="BaseAddress">140720262414336</S>
+              <I32 N="ModuleMemorySize">204800</I32>
+              <S N="EntryPointAddress">140720262450880</S>
+              <S N="FileVersionInfo">File:             C:\WINDOWS\System32\IMM32.DLL_x000D__x000A_InternalName:     imm32_x000D__x000A_OriginalFilename: imm32_x000D__x000A_FileVersion:      10.0.26100.8521 (WinBuild.160101.0800)_x000D__x000A_FileDescription:  Multi-User Windows IMM32 API Client DLL_x000D__x000A_Product:          Microsoft® Windows® Operating System_x000D__x000A_ProductVersion:   10.0.26100.8521_x000D__x000A_Debug:            False_x000D__x000A_Patched:          False_x000D__x000A_PreRelease:       False_x000D__x000A_PrivateBuild:     False_x000D__x000A_SpecialBuild:     False_x000D__x000A_Language:         英语(美国)_x000D__x000A_</S>
+              <Nil N="Site" />
+              <Nil N="Container" />
+            </Props>
+            <MS>
+              <I32 N="Size">200</I32>
+              <S N="Company">Microsoft Corporation</S>
+              <S N="FileVersion">10.0.26100.8521 (WinBuild.160101.0800)</S>
+              <S N="ProductVersion">10.0.26100.8521</S>
+              <S N="Description">Multi-User Windows IMM32 API Client DLL</S>
+              <S N="Product">Microsoft® Windows® Operating System</S>
+            </MS>
+          </Obj>
+          <Obj RefId="35">
+            <TNRef RefId="4" />
+            <ToString>System.Diagnostics.ProcessModule (powrprof.dll)</ToString>
+            <Props>
+              <S N="ModuleName">powrprof.dll</S>
+              <S N="FileName">C:\WINDOWS\SYSTEM32\powrprof.dll</S>
+              <S N="BaseAddress">140720248127488</S>
+              <I32 N="ModuleMemorySize">385024</I32>
+              <S N="EntryPointAddress">140720248169328</S>
+              <S N="FileVersionInfo">File:             C:\WINDOWS\SYSTEM32\powrprof.dll_x000D__x000A_InternalName:     POWRPROF_x000D__x000A_OriginalFilename: POWRPROF.DLL.MUI_x000D__x000A_FileVersion:      10.0.26100.8457 (WinBuild.160101.0800)_x000D__x000A_FileDescription:  电源配置文件帮助程序 DLL_x000D__x000A_Product:          Microsoft® Windows® Operating System_x000D__x000A_ProductVersion:   10.0.26100.8457_x000D__x000A_Debug:            False_x000D__x000A_Patched:          False_x000D__x000A_PreRelease:       False_x000D__x000A_PrivateBuild:     False_x000D__x000A_SpecialBuild:     False_x000D__x000A_Language:         简体中文(中国大陆)_x000D__x000A_</S>
+              <Nil N="Site" />
+              <Nil N="Container" />
+            </Props>
+            <MS>
+              <I32 N="Size">376</I32>
+              <S N="Company">Microsoft Corporation</S>
+              <S N="FileVersion">10.0.26100.8457 (WinBuild.160101.0800)</S>
+              <S N="ProductVersion">10.0.26100.8457</S>
+              <S N="Description">电源配置文件帮助程序 DLL</S>
+              <S N="Product">Microsoft® Windows® Operating System</S>
+            </MS>
+          </Obj>
+          <Obj RefId="36">
+            <TNRef RefId="4" />
+            <ToString>System.Diagnostics.ProcessModule (UMPDC.dll)</ToString>
+            <Props>
+              <S N="ModuleName">UMPDC.dll</S>
+              <S N="FileName">C:\WINDOWS\SYSTEM32\UMPDC.dll</S>
+              <S N="BaseAddress">140720247996416</S>
+              <I32 N="ModuleMemorySize">81920</I32>
+              <S N="EntryPointAddress">140720248029824</S>
+              <S N="FileVersionInfo">File:             C:\WINDOWS\SYSTEM32\UMPDC.dll_x000D__x000A_InternalName:     umpdc.dll_x000D__x000A_OriginalFilename: umpdc.dll_x000D__x000A_FileVersion:      10.0.26100.8115 (WinBuild.160101.0800)_x000D__x000A_FileDescription:  User Mode Power Dependency Coordinator_x000D__x000A_Product:          Microsoft® Windows® Operating System_x000D__x000A_ProductVersion:   10.0.26100.8115_x000D__x000A_Debug:            False_x000D__x000A_Patched:          False_x000D__x000A_PreRelease:       False_x000D__x000A_PrivateBuild:     False_x000D__x000A_SpecialBuild:     False_x000D__x000A_Language:         语言中性_x000D__x000A_</S>
+              <Nil N="Site" />
+              <Nil N="Container" />
+            </Props>
+            <MS>
+              <I32 N="Size">80</I32>
+              <S N="Company">Microsoft Corporation</S>
+              <S N="FileVersion">10.0.26100.8115 (WinBuild.160101.0800)</S>
+              <S N="ProductVersion">10.0.26100.8115</S>
+              <S N="Description">User Mode Power Dependency Coordinator</S>
+              <S N="Product">Microsoft® Windows® Operating System</S>
+            </MS>
+          </Obj>
+          <Obj RefId="37">
+            <TNRef RefId="4" />
+            <ToString>System.Diagnostics.ProcessModule (uxtheme.dll)</ToString>
+            <Props>
+              <S N="ModuleName">uxtheme.dll</S>
+              <S N="FileName">C:\WINDOWS\system32\uxtheme.dll</S>
+              <S N="BaseAddress">140720186589184</S>
+              <I32 N="ModuleMemorySize">696320</I32>
+              <S N="EntryPointAddress">140720186915824</S>
+              <S N="FileVersionInfo">File:             C:\WINDOWS\system32\uxtheme.dll_x000D__x000A_InternalName:     UxTheme.dll_x000D__x000A_OriginalFilename: UxTheme.dll.mui_x000D__x000A_FileVersion:      10.0.26100.8457 (WinBuild.160101.0800)_x000D__x000A_FileDescription:  Microsoft UxTheme 库_x000D__x000A_Product:          Microsoft® Windows® Operating System_x000D__x000A_ProductVersion:   10.0.26100.8457_x000D__x000A_Debug:            False_x000D__x000A_Patched:          False_x000D__x000A_PreRelease:       False_x000D__x000A_PrivateBuild:     False_x000D__x000A_SpecialBuild:     False_x000D__x000A_Language:         简体中文(中国大陆)_x000D__x000A_</S>
+              <Nil N="Site" />
+              <Nil N="Container" />
+            </Props>
+            <MS>
+              <I32 N="Size">680</I32>
+              <S N="Company">Microsoft Corporation</S>
+              <S N="FileVersion">10.0.26100.8457 (WinBuild.160101.0800)</S>
+              <S N="ProductVersion">10.0.26100.8457</S>
+              <S N="Description">Microsoft UxTheme 库</S>
+              <S N="Product">Microsoft® Windows® Operating System</S>
+            </MS>
+          </Obj>
+          <Obj RefId="38">
+            <TNRef RefId="4" />
+            <ToString>System.Diagnostics.ProcessModule (mswsock.dll)</ToString>
+            <Props>
+              <S N="ModuleName">mswsock.dll</S>
+              <S N="FileName">C:\WINDOWS\system32\mswsock.dll</S>
+              <S N="BaseAddress">140720236199936</S>
+              <I32 N="ModuleMemorySize">442368</I32>
+              <S N="EntryPointAddress">140720236346000</S>
+              <S N="FileVersionInfo">File:             C:\WINDOWS\system32\mswsock.dll_x000D__x000A_InternalName:     mswsock.dll_x000D__x000A_OriginalFilename: mswsock.dll.mui_x000D__x000A_FileVersion:      10.0.26100.8457 (WinBuild.160101.0800)_x000D__x000A_FileDescription:  Microsoft Windows Sockets 2.0 服务提供程序_x000D__x000A_Product:          Microsoft® Windows® Operating System_x000D__x000A_ProductVersion:   10.0.26100.8457_x000D__x000A_Debug:            False_x000D__x000A_Patched:          False_x000D__x000A_PreRelease:       False_x000D__x000A_PrivateBuild:     False_x000D__x000A_SpecialBuild:     False_x000D__x000A_Language:         简体中文(中国大陆)_x000D__x000A_</S>
+              <Nil N="Site" />
+              <Nil N="Container" />
+            </Props>
+            <MS>
+              <I32 N="Size">432</I32>
+              <S N="Company">Microsoft Corporation</S>
+              <S N="FileVersion">10.0.26100.8457 (WinBuild.160101.0800)</S>
+              <S N="ProductVersion">10.0.26100.8457</S>
+              <S N="Description">Microsoft Windows Sockets 2.0 服务提供程序</S>
+              <S N="Product">Microsoft® Windows® Operating System</S>
+            </MS>
+          </Obj>
+          <Obj RefId="39">
+            <TNRef RefId="4" />
+            <ToString>System.Diagnostics.ProcessModule (bcryptprimitives.dll)</ToString>
+            <Props>
+              <S N="ModuleName">bcryptprimitives.dll</S>
+              <S N="FileName">C:\WINDOWS\System32\bcryptprimitives.dll</S>
+              <S N="BaseAddress">140720252780544</S>
+              <I32 N="ModuleMemorySize">688128</I32>
+              <S N="EntryPointAddress">140720253058032</S>
+              <S N="FileVersionInfo">File:             C:\WINDOWS\System32\bcryptprimitives.dll_x000D__x000A_InternalName:     bcryptprimitives.dll_x000D__x000A_OriginalFilename: bcryptprimitives.dll_x000D__x000A_FileVersion:      10.0.26100.8328 (WinBuild.160101.0800)_x000D__x000A_FileDescription:  Windows Cryptographic Primitives Library_x000D__x000A_Product:          Microsoft® Windows® Operating System_x000D__x000A_ProductVersion:   10.0.26100.8328_x000D__x000A_Debug:            False_x000D__x000A_Patched:          False_x000D__x000A_PreRelease:       False_x000D__x000A_PrivateBuild:     False_x000D__x000A_SpecialBuild:     False_x000D__x000A_Language:         英语(美国)_x000D__x000A_</S>
+              <Nil N="Site" />
+              <Nil N="Container" />
+            </Props>
+            <MS>
+              <I32 N="Size">672</I32>
+              <S N="Company">Microsoft Corporation</S>
+              <S N="FileVersion">10.0.26100.8328 (WinBuild.160101.0800)</S>
+              <S N="ProductVersion">10.0.26100.8328</S>
+              <S N="Description">Windows Cryptographic Primitives Library</S>
+              <S N="Product">Microsoft® Windows® Operating System</S>
+            </MS>
+          </Obj>
+          <Obj RefId="40">
+            <TNRef RefId="4" />
+            <ToString>System.Diagnostics.ProcessModule (kernel.appcore.dll)</ToString>
+            <Props>
+              <S N="ModuleName">kernel.appcore.dll</S>
+              <S N="FileName">C:\WINDOWS\SYSTEM32\kernel.appcore.dll</S>
+              <S N="BaseAddress">140720229842944</S>
+              <I32 N="ModuleMemorySize">110592</I32>
+              <S N="EntryPointAddress">140720229865040</S>
+              <S N="FileVersionInfo">File:             C:\WINDOWS\SYSTEM32\kernel.appcore.dll_x000D__x000A_InternalName:     kernel.appcore.dll_x000D__x000A_OriginalFilename: kernel.appcore.dll_x000D__x000A_FileVersion:      10.0.26100.8521 (WinBuild.160101.0800)_x000D__x000A_FileDescription:  AppModel API Host_x000D__x000A_Product:          Microsoft® Windows® Operating System_x000D__x000A_ProductVersion:   10.0.26100.8521_x000D__x000A_Debug:            False_x000D__x000A_Patched:          False_x000D__x000A_PreRelease:       False_x000D__x000A_PrivateBuild:     False_x000D__x000A_SpecialBuild:     False_x000D__x000A_Language:         英语(美国)_x000D__x000A_</S>
+              <Nil N="Site" />
+              <Nil N="Container" />
+            </Props>
+            <MS>
+              <I32 N="Size">108</I32>
+              <S N="Company">Microsoft Corporation</S>
+              <S N="FileVersion">10.0.26100.8521 (WinBuild.160101.0800)</S>
+              <S N="ProductVersion">10.0.26100.8521</S>
+              <S N="Description">AppModel API Host</S>
+              <S N="Product">Microsoft® Windows® Operating System</S>
+            </MS>
+          </Obj>
+          <Obj RefId="41">
+            <TNRef RefId="4" />
+            <ToString>System.Diagnostics.ProcessModule (NSI.dll)</ToString>
+            <Props>
+              <S N="ModuleName">NSI.dll</S>
+              <S N="FileName">C:\WINDOWS\System32\NSI.dll</S>
+              <S N="BaseAddress">140720261234688</S>
+              <I32 N="ModuleMemorySize">40960</I32>
+              <S N="EntryPointAddress">140720261244912</S>
+              <S N="FileVersionInfo">File:             C:\WINDOWS\System32\NSI.dll_x000D__x000A_InternalName:     nsi.dll_x000D__x000A_OriginalFilename: nsi.dll_x000D__x000A_FileVersion:      10.0.26100.8246 (WinBuild.160101.0800)_x000D__x000A_FileDescription:  NSI User-mode interface DLL_x000D__x000A_Product:          Microsoft® Windows® Operating System_x000D__x000A_ProductVersion:   10.0.26100.8246_x000D__x000A_Debug:            False_x000D__x000A_Patched:          False_x000D__x000A_PreRelease:       False_x000D__x000A_PrivateBuild:     False_x000D__x000A_SpecialBuild:     False_x000D__x000A_Language:         英语(美国)_x000D__x000A_</S>
+              <Nil N="Site" />
+              <Nil N="Container" />
+            </Props>
+            <MS>
+              <I32 N="Size">40</I32>
+              <S N="Company">Microsoft Corporation</S>
+              <S N="FileVersion">10.0.26100.8246 (WinBuild.160101.0800)</S>
+              <S N="ProductVersion">10.0.26100.8246</S>
+              <S N="Description">NSI User-mode interface DLL</S>
+              <S N="Product">Microsoft® Windows® Operating System</S>
+            </MS>
+          </Obj>
+          <Obj RefId="42">
+            <TNRef RefId="4" />
+            <ToString>System.Diagnostics.ProcessModule (dhcpcsvc6.DLL)</ToString>
+            <Props>
+              <S N="ModuleName">dhcpcsvc6.DLL</S>
+              <S N="FileName">C:\WINDOWS\SYSTEM32\dhcpcsvc6.DLL</S>
+              <S N="BaseAddress">140720107159552</S>
+              <I32 N="ModuleMemorySize">118784</I32>
+              <S N="EntryPointAddress">140720107175120</S>
+              <S N="FileVersionInfo">File:             C:\WINDOWS\SYSTEM32\dhcpcsvc6.DLL_x000D__x000A_InternalName:     dhcpcsvc6.dll_x000D__x000A_OriginalFilename: dhcpcsvc6.dll.mui_x000D__x000A_FileVersion:      10.0.26100.8457 (WinBuild.160101.0800)_x000D__x000A_FileDescription:  DHCPv6 客户端_x000D__x000A_Product:          Microsoft® Windows® Operating System_x000D__x000A_ProductVersion:   10.0.26100.8457_x000D__x000A_Debug:            False_x000D__x000A_Patched:          False_x000D__x000A_PreRelease:       False_x000D__x000A_PrivateBuild:     False_x000D__x000A_SpecialBuild:     False_x000D__x000A_Language:         简体中文(中国大陆)_x000D__x000A_</S>
+              <Nil N="Site" />
+              <Nil N="Container" />
+            </Props>
+            <MS>
+              <I32 N="Size">116</I32>
+              <S N="Company">Microsoft Corporation</S>
+              <S N="FileVersion">10.0.26100.8457 (WinBuild.160101.0800)</S>
+              <S N="ProductVersion">10.0.26100.8457</S>
+              <S N="Description">DHCPv6 客户端</S>
+              <S N="Product">Microsoft® Windows® Operating System</S>
+            </MS>
+          </Obj>
+          <Obj RefId="43">
+            <TNRef RefId="4" />
+            <ToString>System.Diagnostics.ProcessModule (dhcpcsvc.DLL)</ToString>
+            <Props>
+              <S N="ModuleName">dhcpcsvc.DLL</S>
+              <S N="FileName">C:\WINDOWS\SYSTEM32\dhcpcsvc.DLL</S>
+              <S N="BaseAddress">140720104210432</S>
+              <I32 N="ModuleMemorySize">151552</I32>
+              <S N="EntryPointAddress">140720104230048</S>
+              <S N="FileVersionInfo">File:             C:\WINDOWS\SYSTEM32\dhcpcsvc.DLL_x000D__x000A_InternalName:     dhcpcsvc.dll_x000D__x000A_OriginalFilename: dhcpcsvc.dll.mui_x000D__x000A_FileVersion:      10.0.26100.8457 (WinBuild.160101.0800)_x000D__x000A_FileDescription:  DHCP 客户端服务_x000D__x000A_Product:          Microsoft® Windows® Operating System_x000D__x000A_ProductVersion:   10.0.26100.8457_x000D__x000A_Debug:            False_x000D__x000A_Patched:          False_x000D__x000A_PreRelease:       False_x000D__x000A_PrivateBuild:     False_x000D__x000A_SpecialBuild:     False_x000D__x000A_Language:         简体中文(中国大陆)_x000D__x000A_</S>
+              <Nil N="Site" />
+              <Nil N="Container" />
+            </Props>
+            <MS>
+              <I32 N="Size">148</I32>
+              <S N="Company">Microsoft Corporation</S>
+              <S N="FileVersion">10.0.26100.8457 (WinBuild.160101.0800)</S>
+              <S N="ProductVersion">10.0.26100.8457</S>
+              <S N="Description">DHCP 客户端服务</S>
+              <S N="Product">Microsoft® Windows® Operating System</S>
+            </MS>
+          </Obj>
+          <Obj RefId="44">
+            <TNRef RefId="4" />
+            <ToString>System.Diagnostics.ProcessModule (DNSAPI.dll)</ToString>
+            <Props>
+              <S N="ModuleName">DNSAPI.dll</S>
+              <S N="FileName">C:\WINDOWS\SYSTEM32\DNSAPI.dll</S>
+              <S N="BaseAddress">140720224796672</S>
+              <I32 N="ModuleMemorySize">1351680</I32>
+              <S N="EntryPointAddress">140720225349776</S>
+              <S N="FileVersionInfo">File:             C:\WINDOWS\SYSTEM32\DNSAPI.dll_x000D__x000A_InternalName:     dnsapi_x000D__x000A_OriginalFilename: dnsapi_x000D__x000A_FileVersion:      10.0.26100.8457 (WinBuild.160101.0800)_x000D__x000A_FileDescription:  DNS 客户端 API DLL_x000D__x000A_Product:          Microsoft® Windows® Operating System_x000D__x000A_ProductVersion:   10.0.26100.8457_x000D__x000A_Debug:            False_x000D__x000A_Patched:          False_x000D__x000A_PreRelease:       False_x000D__x000A_PrivateBuild:     False_x000D__x000A_SpecialBuild:     False_x000D__x000A_Language:         简体中文(中国大陆)_x000D__x000A_</S>
+              <Nil N="Site" />
+              <Nil N="Container" />
+            </Props>
+            <MS>
+              <I32 N="Size">1320</I32>
+              <S N="Company">Microsoft Corporation</S>
+              <S N="FileVersion">10.0.26100.8457 (WinBuild.160101.0800)</S>
+              <S N="ProductVersion">10.0.26100.8457</S>
+              <S N="Description">DNS 客户端 API DLL</S>
+              <S N="Product">Microsoft® Windows® Operating System</S>
+            </MS>
+          </Obj>
+          <Obj RefId="45">
+            <TNRef RefId="4" />
+            <ToString>System.Diagnostics.ProcessModule (DSPARSE.dll)</ToString>
+            <Props>
+              <S N="ModuleName">DSPARSE.dll</S>
+              <S N="FileName">C:\WINDOWS\SYSTEM32\DSPARSE.dll</S>
+              <S N="BaseAddress">140720234102784</S>
+              <I32 N="ModuleMemorySize">53248</I32>
+              <S N="EntryPointAddress">140720234117072</S>
+              <S N="FileVersionInfo">File:             C:\WINDOWS\SYSTEM32\DSPARSE.dll_x000D__x000A_InternalName:     dsparse.dll_x000D__x000A_OriginalFilename: dsparse.dll_x000D__x000A_FileVersion:      10.0.26100.1 (WinBuild.160101.0800)_x000D__x000A_FileDescription:  Active Directory Domain Services API_x000D__x000A_Product:          Microsoft® Windows® Operating System_x000D__x000A_ProductVersion:   10.0.26100.1_x000D__x000A_Debug:            False_x000D__x000A_Patched:          False_x000D__x000A_PreRelease:       False_x000D__x000A_PrivateBuild:     False_x000D__x000A_SpecialBuild:     False_x000D__x000A_Language:         英语(美国)_x000D__x000A_</S>
+              <Nil N="Site" />
+              <Nil N="Container" />
+            </Props>
+            <MS>
+              <I32 N="Size">52</I32>
+              <S N="Company">Microsoft Corporation</S>
+              <S N="FileVersion">10.0.26100.1 (WinBuild.160101.0800)</S>
+              <S N="ProductVersion">10.0.26100.1</S>
+              <S N="Description">Active Directory Domain Services API</S>
+              <S N="Product">Microsoft® Windows® Operating System</S>
+            </MS>
+          </Obj>
+        </IE>
+        <Props>
+          <I32 N="Count">40</I32>
+          <Obj N="SyncRoot" RefId="46">
+            <TN RefId="5">
+              <T>System.Collections.ArrayList</T>
+              <T>System.Object</T>
+            </TN>
+            <LST>
+              <Ref RefId="6" />
+              <Ref RefId="7" />
+              <Ref RefId="8" />
+              <Ref RefId="9" />
+              <Ref RefId="10" />
+              <Ref RefId="11" />
+              <Ref RefId="12" />
+              <Ref RefId="13" />
+              <Ref RefId="14" />
+              <Ref RefId="15" />
+              <Ref RefId="16" />
+              <Ref RefId="17" />
+              <Ref RefId="18" />
+              <Ref RefId="19" />
+              <Ref RefId="20" />
+              <Ref RefId="21" />
+              <Ref RefId="22" />
+              <Ref RefId="23" />
+              <Ref RefId="24" />
+              <Ref RefId="25" />
+              <Ref RefId="26" />
+              <Ref RefId="27" />
+              <Ref RefId="28" />
+              <Ref RefId="29" />
+              <Ref RefId="30" />
+              <Ref RefId="31" />
+              <Ref RefId="32" />
+              <Ref RefId="33" />
+              <Ref RefId="34" />
+              <Ref RefId="35" />
+              <Ref RefId="36" />
+              <Ref RefId="37" />
+              <Ref RefId="38" />
+              <Ref RefId="39" />
+              <Ref RefId="40" />
+              <Ref RefId="41" />
+              <Ref RefId="42" />
+              <Ref RefId="43" />
+              <Ref RefId="44" />
+              <Ref RefId="45" />
+            </LST>
+          </Obj>
+          <B N="IsSynchronized">false</B>
+        </Props>
+      </Obj>
+      <I64 N="NonpagedSystemMemorySize64">41560</I64>
+      <I32 N="NonpagedSystemMemorySize">41560</I32>
+      <I64 N="PagedMemorySize64">18329600</I64>
+      <I32 N="PagedMemorySize">18329600</I32>
+      <I64 N="PagedSystemMemorySize64">338240</I64>
+      <I32 N="PagedSystemMemorySize">338240</I32>
+      <I64 N="PeakPagedMemorySize64">18345984</I64>
+      <I32 N="PeakPagedMemorySize">18345984</I32>
+      <I64 N="PeakWorkingSet64">51548160</I64>
+      <I32 N="PeakWorkingSet">51548160</I32>
+      <I64 N="PeakVirtualMemorySize64">5143670784</I64>
+      <I32 N="PeakVirtualMemorySize">848703488</I32>
+      <B N="PriorityBoostEnabled">true</B>
+      <Obj N="PriorityClass" RefId="47">
+        <TN RefId="6">
+          <T>System.Diagnostics.ProcessPriorityClass</T>
+          <T>System.Enum</T>
+          <T>System.ValueType</T>
+          <T>System.Object</T>
+        </TN>
+        <ToString>Normal</ToString>
+        <I32>32</I32>
+      </Obj>
+      <I64 N="PrivateMemorySize64">18329600</I64>
+      <I32 N="PrivateMemorySize">18329600</I32>
+      <Obj N="ProcessorAffinity" RefId="48">
+        <TNRef RefId="2" />
+        <ToString>65535</ToString>
+      </Obj>
+      <I32 N="SessionId">1</I32>
+      <Obj N="StartInfo" RefId="49">
+        <TN RefId="7">
+          <T>System.Diagnostics.ProcessStartInfo</T>
+          <T>System.Object</T>
+        </TN>
+        <ToString>System.Diagnostics.ProcessStartInfo</ToString>
+        <Props>
+          <S N="Arguments">server.cjs</S>
+          <Obj N="ArgumentList" RefId="50">
+            <TN RefId="8">
+              <T>System.Collections.ObjectModel.Collection`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]</T>
+              <T>System.Object</T>
+            </TN>
+            <LST />
+          </Obj>
+          <B N="CreateNoWindow">false</B>
+          <Obj N="EnvironmentVariables" RefId="51">
+            <TN RefId="9">
+              <T>System.Collections.Specialized.StringDictionaryWrapper</T>
+              <T>System.Collections.Specialized.StringDictionary</T>
+              <T>System.Object</T>
+            </TN>
+            <IE>
+              <S>[CommonProgramFiles(x86), C:\Program Files (x86)\Common Files]</S>
+              <S>[WSLENV, WT_SESSION:WT_PROFILE_ID:]</S>
+              <S>[LOCALAPPDATA, C:\Users\12202\AppData\Local]</S>
+              <S>[SESSIONNAME, Console]</S>
+              <S>[DriverData, C:\Windows\System32\Drivers\DriverData]</S>
+              <S>[CommonProgramFiles, C:\Program Files\Common Files]</S>
+              <S>[windir, C:\WINDOWS]</S>
+              <S>[HTTP_PROXY, http://127.0.0.1:7897]</S>
+              <S>[LOGONSERVER, \\YUGUTOU-]</S>
+              <S>[npm_config_user_agent, npm/undefined node/v24.3.0 win32 x64 workspaces/false]</S>
+              <S>[ProgramFiles, C:\Program Files]</S>
+              <S>[HTTPS_PROXY, http://127.0.0.1:7897]</S>
+              <S>[COMPUTERNAME, YUGUTOU-]</S>
+              <S>[ProgramW6432, C:\Program Files]</S>
+              <S>[HOMEPATH, \Users\12202]</S>
+              <S>[PNPM_HOME, C:\Users\12202\AppData\Local\pnpm]</S>
+              <S>[WT_PROFILE_ID, {574e775e-4f2a-5b96-ac1e-a2962a402336}]</S>
+              <S>[PUBLIC, C:\Users\Public]</S>
+              <S>[HOMEDRIVE, C:]</S>
+              <S>[Path, C:\Program Files\PowerShell\7;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Bandizip\;C:\Program Files\Git\cmd;C:\Users\12202\AppData\Local\pnpm;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\OpenSSH\;C:\Users\12202\AppData\Local\Microsoft\WindowsApps;C:\Users\12202\AppData\Local\Microsoft\WinGet\Links;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;D:\微信web开发者工具\dll;C:\Program Files\CMake\bin;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\PowerShell\7\;C:\Users\12202\.local\bin;C:\Users\12202\AppData\Local\codegraph\current\bin;C:\Users\12202\AppData\Local\Programs\Python\Python313\Scripts\;C:\Users\12202\AppData\Local\Programs\Python\Python313\;C:\Users\12202\AppData\Local\Programs\Python\Launcher\;C:\Users\12202\AppData\Local\pnpm\bin;C:\Users\12202\AppData\Local\pnpm;C:\Users\12202\AppData\Local\pnpm;C:\Users\12202\AppData\Local\Microsoft\WindowsApps;C:\Users\12202\AppData\Local\pnpm;C:\Users\12202\AppData\Local\pnpm\bin;D:\Microsoft VS Code\bin;C:\Program Files\Git\bin]</S>
+              <S>[ALL_PROXY, http://127.0.0.1:7897]</S>
+              <S>[CommonProgramW6432, C:\Program Files\Common Files]</S>
+              <S>[CONTEXT7_API_KEY, ctx7sk-33f12ac2-3a50-44d6-9d26-57939e624b55]</S>
+              <S>[ZES_ENABLE_SYSMAN, 1]</S>
+              <S>[TMP, C:\Users\12202\AppData\Local\Temp]</S>
+              <S>[PATHEXT, .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL]</S>
+              <S>[SystemDrive, C:]</S>
+              <S>[OS, Windows_NT]</S>
+              <S>[NO_PROXY, localhost,127.0.0.1,::1,*.local]</S>
+              <S>[APPDATA, C:\Users\12202\AppData\Roaming]</S>
+              <S>[USERDOMAIN_ROAMINGPROFILE, YUGUTOU-]</S>
+              <S>[PROCESSOR_LEVEL, 6]</S>
+              <S>[PROCESSOR_IDENTIFIER, Intel64 Family 6 Model 154 Stepping 3, GenuineIntel]</S>
+              <S>[PSModulePath, C:\Users\12202\Documents\PowerShell\Modules;C:\Program Files\PowerShell\Modules;c:\program files\powershell\7\Modules;C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules]</S>
+              <S>[WT_SESSION, da5fe49b-7844-4664-bcac-90effdd86a32]</S>
+              <S>[PROCESSOR_REVISION, 9a03]</S>
+              <S>[NUMBER_OF_PROCESSORS, 16]</S>
+              <S>[NODE_PATH, C:\Users\12202\AppData\Local\pnpm\global\5\.pnpm\opencode-ai@1.17.12\node_modules\opencode-ai\node_modules;C:\Users\12202\AppData\Local\pnpm\global\5\.pnpm\opencode-ai@1.17.12\node_modules;C:\Users\12202\AppData\Local\pnpm\global\5\.pnpm\node_modules]</S>
+              <S>[TEMP, C:\Users\12202\AppData\Local\Temp]</S>
+              <S>[USERNAME, 12202]</S>
+              <S>[PROCESSOR_ARCHITECTURE, AMD64]</S>
+              <S>[POWERSHELL_DISTRIBUTION_CHANNEL, MSI:Windows 10 Home China]</S>
+              <S>[ALLUSERSPROFILE, C:\ProgramData]</S>
+              <S>[ComSpec, C:\WINDOWS\system32\cmd.exe]</S>
+              <S>[ProgramFiles(x86), C:\Program Files (x86)]</S>
+              <S>[ProgramData, C:\ProgramData]</S>
+              <S>[USERPROFILE, C:\Users\12202]</S>
+              <S>[SystemRoot, C:\WINDOWS]</S>
+              <S>[USERDOMAIN, YUGUTOU-]</S>
+              <S>[BRAINSTORM_DIR, D:\DEV\DEMO\Template\react-template\.superpowers\brainstorm\session-2]</S>
+              <S>[BRAINSTORM_HOST, 127.0.0.1]</S>
+              <S>[BRAINSTORM_URL_HOST, localhost]</S>
+            </IE>
+          </Obj>
+          <Obj N="Environment" RefId="52">
+            <TN RefId="10">
+              <T>System.Collections.Specialized.DictionaryWrapper</T>
+              <T>System.Object</T>
+            </TN>
+            <DCT>
+              <En>
+                <S N="Key">CommonProgramFiles(x86)</S>
+                <S N="Value">C:\Program Files (x86)\Common Files</S>
+              </En>
+              <En>
+                <S N="Key">WSLENV</S>
+                <S N="Value">WT_SESSION:WT_PROFILE_ID:</S>
+              </En>
+              <En>
+                <S N="Key">LOCALAPPDATA</S>
+                <S N="Value">C:\Users\12202\AppData\Local</S>
+              </En>
+              <En>
+                <S N="Key">SESSIONNAME</S>
+                <S N="Value">Console</S>
+              </En>
+              <En>
+                <S N="Key">DriverData</S>
+                <S N="Value">C:\Windows\System32\Drivers\DriverData</S>
+              </En>
+              <En>
+                <S N="Key">CommonProgramFiles</S>
+                <S N="Value">C:\Program Files\Common Files</S>
+              </En>
+              <En>
+                <S N="Key">windir</S>
+                <S N="Value">C:\WINDOWS</S>
+              </En>
+              <En>
+                <S N="Key">HTTP_PROXY</S>
+                <S N="Value">http://127.0.0.1:7897</S>
+              </En>
+              <En>
+                <S N="Key">LOGONSERVER</S>
+                <S N="Value">\\YUGUTOU-</S>
+              </En>
+              <En>
+                <S N="Key">npm_config_user_agent</S>
+                <S N="Value">npm/undefined node/v24.3.0 win32 x64 workspaces/false</S>
+              </En>
+              <En>
+                <S N="Key">ProgramFiles</S>
+                <S N="Value">C:\Program Files</S>
+              </En>
+              <En>
+                <S N="Key">HTTPS_PROXY</S>
+                <S N="Value">http://127.0.0.1:7897</S>
+              </En>
+              <En>
+                <S N="Key">COMPUTERNAME</S>
+                <S N="Value">YUGUTOU-</S>
+              </En>
+              <En>
+                <S N="Key">ProgramW6432</S>
+                <S N="Value">C:\Program Files</S>
+              </En>
+              <En>
+                <S N="Key">HOMEPATH</S>
+                <S N="Value">\Users\12202</S>
+              </En>
+              <En>
+                <S N="Key">PNPM_HOME</S>
+                <S N="Value">C:\Users\12202\AppData\Local\pnpm</S>
+              </En>
+              <En>
+                <S N="Key">WT_PROFILE_ID</S>
+                <S N="Value">{574e775e-4f2a-5b96-ac1e-a2962a402336}</S>
+              </En>
+              <En>
+                <S N="Key">PUBLIC</S>
+                <S N="Value">C:\Users\Public</S>
+              </En>
+              <En>
+                <S N="Key">HOMEDRIVE</S>
+                <S N="Value">C:</S>
+              </En>
+              <En>
+                <S N="Key">Path</S>
+                <S N="Value">C:\Program Files\PowerShell\7;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Bandizip\;C:\Program Files\Git\cmd;C:\Users\12202\AppData\Local\pnpm;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\OpenSSH\;C:\Users\12202\AppData\Local\Microsoft\WindowsApps;C:\Users\12202\AppData\Local\Microsoft\WinGet\Links;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;D:\微信web开发者工具\dll;C:\Program Files\CMake\bin;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\PowerShell\7\;C:\Users\12202\.local\bin;C:\Users\12202\AppData\Local\codegraph\current\bin;C:\Users\12202\AppData\Local\Programs\Python\Python313\Scripts\;C:\Users\12202\AppData\Local\Programs\Python\Python313\;C:\Users\12202\AppData\Local\Programs\Python\Launcher\;C:\Users\12202\AppData\Local\pnpm\bin;C:\Users\12202\AppData\Local\pnpm;C:\Users\12202\AppData\Local\pnpm;C:\Users\12202\AppData\Local\Microsoft\WindowsApps;C:\Users\12202\AppData\Local\pnpm;C:\Users\12202\AppData\Local\pnpm\bin;D:\Microsoft VS Code\bin;C:\Program Files\Git\bin</S>
+              </En>
+              <En>
+                <S N="Key">ALL_PROXY</S>
+                <S N="Value">http://127.0.0.1:7897</S>
+              </En>
+              <En>
+                <S N="Key">CommonProgramW6432</S>
+                <S N="Value">C:\Program Files\Common Files</S>
+              </En>
+              <En>
+                <S N="Key">CONTEXT7_API_KEY</S>
+                <S N="Value">ctx7sk-33f12ac2-3a50-44d6-9d26-57939e624b55</S>
+              </En>
+              <En>
+                <S N="Key">ZES_ENABLE_SYSMAN</S>
+                <S N="Value">1</S>
+              </En>
+              <En>
+                <S N="Key">TMP</S>
+                <S N="Value">C:\Users\12202\AppData\Local\Temp</S>
+              </En>
+              <En>
+                <S N="Key">PATHEXT</S>
+                <S N="Value">.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL</S>
+              </En>
+              <En>
+                <S N="Key">SystemDrive</S>
+                <S N="Value">C:</S>
+              </En>
+              <En>
+                <S N="Key">OS</S>
+                <S N="Value">Windows_NT</S>
+              </En>
+              <En>
+                <S N="Key">NO_PROXY</S>
+                <S N="Value">localhost,127.0.0.1,::1,*.local</S>
+              </En>
+              <En>
+                <S N="Key">APPDATA</S>
+                <S N="Value">C:\Users\12202\AppData\Roaming</S>
+              </En>
+              <En>
+                <S N="Key">USERDOMAIN_ROAMINGPROFILE</S>
+                <S N="Value">YUGUTOU-</S>
+              </En>
+              <En>
+                <S N="Key">PROCESSOR_LEVEL</S>
+                <S N="Value">6</S>
+              </En>
+              <En>
+                <S N="Key">PROCESSOR_IDENTIFIER</S>
+                <S N="Value">Intel64 Family 6 Model 154 Stepping 3, GenuineIntel</S>
+              </En>
+              <En>
+                <S N="Key">PSModulePath</S>
+                <S N="Value">C:\Users\12202\Documents\PowerShell\Modules;C:\Program Files\PowerShell\Modules;c:\program files\powershell\7\Modules;C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules</S>
+              </En>
+              <En>
+                <S N="Key">WT_SESSION</S>
+                <S N="Value">da5fe49b-7844-4664-bcac-90effdd86a32</S>
+              </En>
+              <En>
+                <S N="Key">PROCESSOR_REVISION</S>
+                <S N="Value">9a03</S>
+              </En>
+              <En>
+                <S N="Key">NUMBER_OF_PROCESSORS</S>
+                <S N="Value">16</S>
+              </En>
+              <En>
+                <S N="Key">NODE_PATH</S>
+                <S N="Value">C:\Users\12202\AppData\Local\pnpm\global\5\.pnpm\opencode-ai@1.17.12\node_modules\opencode-ai\node_modules;C:\Users\12202\AppData\Local\pnpm\global\5\.pnpm\opencode-ai@1.17.12\node_modules;C:\Users\12202\AppData\Local\pnpm\global\5\.pnpm\node_modules</S>
+              </En>
+              <En>
+                <S N="Key">TEMP</S>
+                <S N="Value">C:\Users\12202\AppData\Local\Temp</S>
+              </En>
+              <En>
+                <S N="Key">USERNAME</S>
+                <S N="Value">12202</S>
+              </En>
+              <En>
+                <S N="Key">PROCESSOR_ARCHITECTURE</S>
+                <S N="Value">AMD64</S>
+              </En>
+              <En>
+                <S N="Key">POWERSHELL_DISTRIBUTION_CHANNEL</S>
+                <S N="Value">MSI:Windows 10 Home China</S>
+              </En>
+              <En>
+                <S N="Key">ALLUSERSPROFILE</S>
+                <S N="Value">C:\ProgramData</S>
+              </En>
+              <En>
+                <S N="Key">ComSpec</S>
+                <S N="Value">C:\WINDOWS\system32\cmd.exe</S>
+              </En>
+              <En>
+                <S N="Key">ProgramFiles(x86)</S>
+                <S N="Value">C:\Program Files (x86)</S>
+              </En>
+              <En>
+                <S N="Key">ProgramData</S>
+                <S N="Value">C:\ProgramData</S>
+              </En>
+              <En>
+                <S N="Key">USERPROFILE</S>
+                <S N="Value">C:\Users\12202</S>
+              </En>
+              <En>
+                <S N="Key">SystemRoot</S>
+                <S N="Value">C:\WINDOWS</S>
+              </En>
+              <En>
+                <S N="Key">USERDOMAIN</S>
+                <S N="Value">YUGUTOU-</S>
+              </En>
+              <En>
+                <S N="Key">BRAINSTORM_DIR</S>
+                <S N="Value">D:\DEV\DEMO\Template\react-template\.superpowers\brainstorm\session-2</S>
+              </En>
+              <En>
+                <S N="Key">BRAINSTORM_HOST</S>
+                <S N="Value">127.0.0.1</S>
+              </En>
+              <En>
+                <S N="Key">BRAINSTORM_URL_HOST</S>
+                <S N="Value">localhost</S>
+              </En>
+            </DCT>
+          </Obj>
+          <B N="RedirectStandardInput">false</B>
+          <B N="RedirectStandardOutput">true</B>
+          <B N="RedirectStandardError">true</B>
+          <Nil N="StandardInputEncoding" />
+          <Nil N="StandardErrorEncoding" />
+          <Nil N="StandardOutputEncoding" />
+          <S N="FileName">node</S>
+          <S N="WorkingDirectory">C:\Users\12202\.cache\opencode\packages\superpowers@git+https_\github.com\obra\superpowers.git\node_modules\superpowers\skills\brainstorming\scripts</S>
+          <B N="ErrorDialog">false</B>
+          <S N="ErrorDialogParentHandle">0</S>
+          <S N="UserName"></S>
+          <S N="Verb"></S>
+          <S N="WindowStyle">Normal</S>
+          <Nil N="PasswordInClearText" />
+          <S N="Domain"></S>
+          <B N="LoadUserProfile">false</B>
+          <B N="UseCredentialsForNetworkingOnly">false</B>
+          <Nil N="Password" />
+          <Obj N="Verbs" RefId="53">
+            <TN RefId="11">
+              <T>System.String[]</T>
+              <T>System.Array</T>
+              <T>System.Object</T>
+            </TN>
+            <LST />
+          </Obj>
+          <B N="UseShellExecute">false</B>
+        </Props>
+      </Obj>
+      <Obj N="Threads" RefId="54">
+        <TN RefId="12">
+          <T>System.Diagnostics.ProcessThreadCollection</T>
+          <T>System.Collections.ReadOnlyCollectionBase</T>
+          <T>System.Object</T>
+        </TN>
+        <IE>
+          <Obj RefId="55">
+            <TN RefId="13">
+              <T>System.Diagnostics.ProcessThread</T>
+              <T>System.ComponentModel.Component</T>
+              <T>System.MarshalByRefObject</T>
+              <T>System.Object</T>
+            </TN>
+            <ToString>System.Diagnostics.ProcessThread</ToString>
+            <Props>
+              <I32 N="BasePriority">8</I32>
+              <I32 N="CurrentPriority">9</I32>
+              <I32 N="Id">23752</I32>
+              <B N="PriorityBoostEnabled">true</B>
+              <S N="PriorityLevel">Normal</S>
+              <S N="StartAddress">0</S>
+              <S N="ThreadState">Wait</S>
+              <S N="WaitReason">EventPairLow</S>
+              <DT N="StartTime">2026-07-01T14:19:34.2697319+08:00</DT>
+              <TS N="PrivilegedProcessorTime">PT0S</TS>
+              <TS N="TotalProcessorTime">PT0.046875S</TS>
+              <TS N="UserProcessorTime">PT0.046875S</TS>
+              <Nil N="Site" />
+              <Nil N="Container" />
+            </Props>
+          </Obj>
+          <Obj RefId="56">
+            <TNRef RefId="13" />
+            <ToString>System.Diagnostics.ProcessThread</ToString>
+            <Props>
+              <I32 N="BasePriority">8</I32>
+              <I32 N="CurrentPriority">8</I32>
+              <I32 N="Id">39956</I32>
+              <B N="PriorityBoostEnabled">true</B>
+              <S N="PriorityLevel">Normal</S>
+              <S N="StartAddress">0</S>
+              <S N="ThreadState">Wait</S>
+              <S N="WaitReason">EventPairLow</S>
+              <DT N="StartTime">2026-07-01T14:19:34.2754442+08:00</DT>
+              <TS N="PrivilegedProcessorTime">PT0S</TS>
+              <TS N="TotalProcessorTime">PT0S</TS>
+              <TS N="UserProcessorTime">PT0S</TS>
+              <Nil N="Site" />
+              <Nil N="Container" />
+            </Props>
+          </Obj>
+          <Obj RefId="57">
+            <TNRef RefId="13" />
+            <ToString>System.Diagnostics.ProcessThread</ToString>
+            <Props>
+              <I32 N="BasePriority">8</I32>
+              <I32 N="CurrentPriority">8</I32>
+              <I32 N="Id">36708</I32>
+              <B N="PriorityBoostEnabled">true</B>
+              <S N="PriorityLevel">Normal</S>
+              <S N="StartAddress">0</S>
+              <S N="ThreadState">Wait</S>
+              <S N="WaitReason">EventPairLow</S>
+              <DT N="StartTime">2026-07-01T14:19:34.2758186+08:00</DT>
+              <TS N="PrivilegedProcessorTime">PT0S</TS>
+              <TS N="TotalProcessorTime">PT0S</TS>
+              <TS N="UserProcessorTime">PT0S</TS>
+              <Nil N="Site" />
+              <Nil N="Container" />
+            </Props>
+          </Obj>
+          <Obj RefId="58">
+            <TNRef RefId="13" />
+            <ToString>System.Diagnostics.ProcessThread</ToString>
+            <Props>
+              <I32 N="BasePriority">8</I32>
+              <I32 N="CurrentPriority">8</I32>
+              <I32 N="Id">28144</I32>
+              <B N="PriorityBoostEnabled">true</B>
+              <S N="PriorityLevel">Normal</S>
+              <S

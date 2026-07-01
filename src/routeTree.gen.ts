@@ -9,68 +9,100 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './pages/__root'
-import { Route as IndexRouteImport } from './pages/index'
-import { Route as IdAboutRouteImport } from './pages/$id.about'
+import { Route as LoginRouteImport } from './pages/login'
+import { Route as SplatRouteImport } from './pages/$'
+import { Route as AuthIndexRouteImport } from './pages/_auth/index'
+import { Route as AuthCountIndexRouteImport } from './pages/_auth/count/index'
 
-const IndexRoute = IndexRouteImport.update({
-  id: '/',
-  path: '/',
+const LoginRoute = LoginRouteImport.update({
+  id: '/login',
+  path: '/login',
   getParentRoute: () => rootRouteImport,
 } as any)
-const IdAboutRoute = IdAboutRouteImport.update({
-  id: '/$id/about',
-  path: '/$id/about',
+const SplatRoute = SplatRouteImport.update({
+  id: '/$',
+  path: '/$',
   getParentRoute: () => rootRouteImport,
+} as any)
+const AuthIndexRoute = AuthIndexRouteImport.update({
+  id: '/',
+  path: '/',
+  getParentRoute: () => AuthRoute,
+} as any)
+const AuthCountIndexRoute = AuthCountIndexRouteImport.update({
+  id: '/count/',
+  path: '/count/',
+  getParentRoute: () => AuthRoute,
 } as any)
 
 export interface FileRoutesByFullPath {
-  '/': typeof IndexRoute
-  '/$id/about': typeof IdAboutRoute
+  '/$': typeof SplatRoute
+  '/login': typeof LoginRoute
+  '/': typeof AuthIndexRoute
+  '/count/': typeof AuthCountIndexRoute
 }
 export interface FileRoutesByTo {
-  '/': typeof IndexRoute
-  '/$id/about': typeof IdAboutRoute
+  '/$': typeof SplatRoute
+  '/login': typeof LoginRoute
+  '/': typeof AuthIndexRoute
+  '/count': typeof AuthCountIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
-  '/': typeof IndexRoute
-  '/$id/about': typeof IdAboutRoute
+  '/$': typeof SplatRoute
+  '/login': typeof LoginRoute
+  '/_auth/': typeof AuthIndexRoute
+  '/_auth/count/': typeof AuthCountIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/$id/about'
+  fullPaths: '/$' | '/login' | '/' | '/count/'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/$id/about'
-  id: '__root__' | '/' | '/$id/about'
+  to: '/$' | '/login' | '/' | '/count'
+  id: '__root__' | '/$' | '/login' | '/_auth/' | '/_auth/count/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
-  IndexRoute: typeof IndexRoute
-  IdAboutRoute: typeof IdAboutRoute
+  SplatRoute: typeof SplatRoute
+  LoginRoute: typeof LoginRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
-    '/': {
-      id: '/'
-      path: '/'
-      fullPath: '/'
-      preLoaderRoute: typeof IndexRouteImport
+    '/login': {
+      id: '/login'
+      path: '/login'
+      fullPath: '/login'
+      preLoaderRoute: typeof LoginRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/$id/about': {
-      id: '/$id/about'
-      path: '/$id/about'
-      fullPath: '/$id/about'
-      preLoaderRoute: typeof IdAboutRouteImport
+    '/$': {
+      id: '/$'
+      path: '/$'
+      fullPath: '/$'
+      preLoaderRoute: typeof SplatRouteImport
       parentRoute: typeof rootRouteImport
+    }
+    '/_auth/': {
+      id: '/_auth/'
+      path: '/'
+      fullPath: '/'
+      preLoaderRoute: typeof AuthIndexRouteImport
+      parentRoute: typeof AuthRoute
+    }
+    '/_auth/count/': {
+      id: '/_auth/count/'
+      path: '/count'
+      fullPath: '/count/'
+      preLoaderRoute: typeof AuthCountIndexRouteImport
+      parentRoute: typeof AuthRoute
     }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
-  IndexRoute: IndexRoute,
-  IdAboutRoute: IdAboutRoute,
+  SplatRoute: SplatRoute,
+  LoginRoute: LoginRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

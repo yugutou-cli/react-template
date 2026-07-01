@@ -3,7 +3,7 @@
   prefix: "iconify";
   scale: 1.2;
 };
-@import "tailwindcss";
+@import 'tailwindcss' source('../');
 
 * {
   box-sizing: border-box;

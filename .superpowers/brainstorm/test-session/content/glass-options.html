@@ -1,0 +1,79 @@
+<h2>毛玻璃方向：3 种具体方案</h2>
+<p class="subtitle">你选了「毛玻璃」，下面是 3 种不同侧重的玻璃拟态登录页。点击卡片选择你喜欢的方向。</p>
+
+<div class="cards">
+  <div class="card" data-choice="a" onclick="toggleSelect(this)">
+    <div class="card-image" style="background: linear-gradient(135deg, #e0e7ff 0%, #fae8ff 50%, #fff1e6 100%); display: flex; align-items: center; justify-content: center; overflow: hidden;">
+      <div style="width: 180px; padding: 1.25rem; border-radius: 16px; background: rgba(255,255,255,0.55); backdrop-filter: blur(12px); border: 1px solid rgba(255,255,255,0.6); box-shadow: 0 8px 32px rgba(0,0,0,0.06);">
+        <div style="text-align: center; margin-bottom: 1rem;">
+          <div style="width: 32px; height: 32px; background: #1e293b; border-radius: 8px; margin: 0 auto 0.5rem;"></div>
+          <div style="font-size: 0.7rem; font-weight: 600; color: #1e293b;">登录到应用</div>
+        </div>
+        <div style="height: 20px; background: rgba(255,255,255,0.7); border-radius: 6px; margin-bottom: 0.5rem; border: 1px solid rgba(0,0,0,0.05);"></div>
+        <div style="height: 20px; background: rgba(255,255,255,0.7); border-radius: 6px; margin-bottom: 0.75rem; border: 1px solid rgba(0,0,0,0.05);"></div>
+        <div style="height: 24px; background: #1e293b; border-radius: 8px;"></div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>A. 柔和渐变居中</h3>
+      <p>柔和三色渐变背景，中间一个半透明白色玻璃卡片。最干净、最聚焦，适合产品本身比较克制的场景。</p>
+    </div>
+  </div>
+
+  <div class="card" data-choice="b" onclick="toggleSelect(this)">
+    <div class="card-image" style="background: #f8fafc; display: flex; align-items: stretch; justify-content: stretch; overflow: hidden;">
+      <div style="width: 45%; background: linear-gradient(160deg, #6366f1 0%, #a855f7 100%);"></div>
+      <div style="flex: 1; display: flex; align-items: center; justify-content: center;">
+        <div style="width: 130px; padding: 1rem; border-radius: 14px; background: rgba(255,255,255,0.75); backdrop-filter: blur(16px); border: 1px solid rgba(255,255,255,0.8); box-shadow: 0 8px 32px rgba(0,0,0,0.08);">
+          <div style="font-size: 0.65rem; font-weight: 600; color: #1e293b; margin-bottom: 0.6rem;">欢迎回来</div>
+          <div style="height: 16px; background: rgba(255,255,255,0.9); border-radius: 5px; margin-bottom: 0.4rem; border: 1px solid rgba(0,0,0,0.05);"></div>
+          <div style="height: 16px; background: rgba(255,255,255,0.9); border-radius: 5px; margin-bottom: 0.6rem; border: 1px solid rgba(0,0,0,0.05);"></div>
+          <div style="height: 20px; background: #4f46e5; border-radius: 6px;"></div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>B. 分屏玻璃卡片</h3>
+      <p>左侧渐变品牌区，右侧玻璃表单卡片。更像 SaaS 登录页，品牌感强，适合有品牌表达需求的场景。</p>
+    </div>
+  </div>
+
+  <div class="card" data-choice="c" onclick="toggleSelect(this)">
+    <div class="card-image" style="background: #fafafa; display: flex; align-items: center; justify-content: center; overflow: hidden; position: relative;">
+      <div style="position: absolute; width: 100px; height: 100px; border-radius: 50%; background: rgba(99,102,241,0.15); filter: blur(20px); top: 15%; left: 20%;"></div>
+      <div style="position: absolute; width: 80px; height: 80px; border-radius: 50%; background: rgba(236,72,153,0.12); filter: blur(18px); bottom: 20%; right: 25%;"></div>
+      <div style="width: 170px; padding: 1.25rem; border-radius: 20px; background: rgba(255,255,255,0.45); backdrop-filter: blur(20px); border: 1px solid rgba(255,255,255,0.65); box-shadow: 0 12px 40px rgba(0,0,0,0.04);">
+        <div style="font-size: 0.7rem; font-weight: 500; color: #374151; margin-bottom: 0.8rem; text-align: center;">登录</div>
+        <div style="height: 18px; background: rgba(255,255,255,0.75); border-radius: 10px; margin-bottom: 0.5rem; border: 1px solid rgba(0,0,0,0.04);"></div>
+        <div style="height: 18px; background: rgba(255,255,255,0.75); border-radius: 10px; margin-bottom: 0.75rem; border: 1px solid rgba(0,0,0,0.04);"></div>
+        <div style="height: 22px; background: #1f2937; border-radius: 10px;"></div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>C. 漂浮形状极简</h3>
+      <p>浅色背景上几个漂浮的模糊色块，卡片玻璃感更强。最轻量、最艺术，适合注重视觉气质的产品。</p>
+    </div>
+  </div>
+</div>
+
+<div class="section" style="margin-top: 2rem;">
+  <h3>权衡对比</h3>
+  <div class="pros-cons">
+    <div class="pros">
+      <h4>推荐 A</h4>
+      <ul>
+        <li>最通用，不容易过时</li>
+        <li>实现简单，兼容性好</li>
+        <li>移动端适配最自然</li>
+      </ul>
+    </div>
+    <div class="cons">
+      <h4>需要注意</h4>
+      <ul>
+        <li>毛玻璃在旧浏览器有 fallback 问题</li>
+        <li>背景色彩需要与应用整体协调</li>
+        <li>暗色模式需要额外设计</li>
+      </ul>
+    </div>
+  </div>
+</div>
