@@ -27,6 +27,10 @@ const config = defineConfig({
           imports: ['useNavigate', 'useMatch', 'useRouter', 'useSearch', 'useParams'],
         },
       ],
+      // fix: tanstack router auto import not working with vite-plugin-react-pages
+      include: [
+        /\.[tj]sx?(?:\?.*)?$/,
+      ],
       dirs: ['./src/stores', './src/utils'],
       dts: './src/types/auto-imports.d.ts',
     }),
