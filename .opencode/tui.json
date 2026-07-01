@@ -1,0 +1,10 @@
+{
+  "plugin": [
+    [
+      "opencode-subagent-magazine@latest",
+      {
+        "enabled": true
+      }
+    ]
+  ]
+}
