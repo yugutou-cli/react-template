@@ -5,7 +5,7 @@ function isAuthenticated() {
 }
 
 // src/routes/_authenticated.tsx
-export const Route = createFileRoute()({
+export const Route = createFileRoute('/_auth/')({
   beforeLoad: async ({ location }) => {
     if (!isAuthenticated()) {
       throw redirect({ to: '/login', search: { redirect: location.href } })

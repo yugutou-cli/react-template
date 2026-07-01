@@ -25,14 +25,14 @@ const SplatRoute = SplatRouteImport.update({
   getParentRoute: () => rootRouteImport,
 } as any)
 const AuthIndexRoute = AuthIndexRouteImport.update({
-  id: '/',
+  id: '/_auth/',
   path: '/',
-  getParentRoute: () => AuthRoute,
+  getParentRoute: () => rootRouteImport,
 } as any)
 const AuthCountIndexRoute = AuthCountIndexRouteImport.update({
-  id: '/count/',
+  id: '/_auth/count/',
   path: '/count/',
-  getParentRoute: () => AuthRoute,
+  getParentRoute: () => rootRouteImport,
 } as any)
 
 export interface FileRoutesByFullPath {
@@ -65,6 +65,8 @@ export interface FileRouteTypes {
 export interface RootRouteChildren {
   SplatRoute: typeof SplatRoute
   LoginRoute: typeof LoginRoute
+  AuthIndexRoute: typeof AuthIndexRoute
+  AuthCountIndexRoute: typeof AuthCountIndexRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -88,14 +90,14 @@ declare module '@tanstack/react-router' {
       path: '/'
       fullPath: '/'
       preLoaderRoute: typeof AuthIndexRouteImport
-      parentRoute: typeof AuthRoute
+      parentRoute: typeof rootRouteImport
     }
     '/_auth/count/': {
       id: '/_auth/count/'
       path: '/count'
       fullPath: '/count/'
       preLoaderRoute: typeof AuthCountIndexRouteImport
-      parentRoute: typeof AuthRoute
+      parentRoute: typeof rootRouteImport
     }
   }
 }
@@ -103,16 +105,9 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   SplatRoute: SplatRoute,
   LoginRoute: LoginRoute,
+  AuthIndexRoute: AuthIndexRoute,
+  AuthCountIndexRoute: AuthCountIndexRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
-
-import type { getRouter } from './router.tsx'
-import type { createStart } from '@tanstack/react-start'
-declare module '@tanstack/react-start' {
-  interface Register {
-    ssr: true
-    router: Awaited<ReturnType<typeof getRouter>>
-  }
-}

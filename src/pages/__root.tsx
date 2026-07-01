@@ -1,68 +1,36 @@
-import type { QueryClient } from '@tanstack/react-query'
-import { TanStackDevtools } from '@tanstack/react-devtools'
-import {
-  createRootRouteWithContext,
-  HeadContent,
-  Scripts,
-} from '@tanstack/react-router'
+import { createRootRoute, Link, Outlet } from '@tanstack/react-router'
+import { TanStackRouterDevtools } from '@tanstack/react-router-devtools'
 
-import { TanStackRouterDevtoolsPanel } from '@tanstack/react-router-devtools'
-
-import TanStackQueryDevtools from '../integrations/tanstack-query/devtools'
-
-import appCss from '../styles/styles.css?url'
-
-interface MyRouterContext {
-  queryClient: QueryClient
-}
-
-export const Route = createRootRouteWithContext<MyRouterContext>()({
-  head: () => ({
-    meta: [
-      {
-        charSet: 'utf-8',
-      },
-      {
-        name: 'viewport',
-        content: 'width=device-width, initial-scale=1',
-      },
-      {
-        title: 'WWWWWj  TanStack Start Starter',
-      },
-    ],
-    links: [
-      {
-        rel: 'stylesheet',
-        href: appCss,
-      },
-    ],
-    scripts: [],
-  }),
-  shellComponent: RootDocument,
+export const Route = createRootRoute({
+  component: RootComponent,
 })
 
-function RootDocument({ children }: { children: React.ReactNode }) {
+function RootComponent() {
   return (
-    <html lang="zh-CN">
-      <head>
-        <HeadContent />
-      </head>
-      <body>
-        {children}
-        <TanStackDevtools
-          config={{
-            position: 'bottom-right',
+    <>
+      <div className="p-2 flex gap-2 text-lg">
+        <Link
+          to="/"
+          activeProps={{
+            className: 'font-bold',
           }}
-          plugins={[
-            {
-              name: 'Tanstack Router',
-              render: <TanStackRouterDevtoolsPanel />,
-            },
-            TanStackQueryDevtools,
-          ]}
-        />
-        <Scripts />
-      </body>
-    </html>
+          activeOptions={{ exact: true }}
+        >
+          Home
+        </Link>
+        {' '}
+        <Link
+          to="/count"
+          activeProps={{
+            className: 'font-bold',
+          }}
+        >
+          Count
+        </Link>
+      </div>
+      <hr />
+      <Outlet />
+      <TanStackRouterDevtools position="bottom-right" />
+    </>
   )
 }
