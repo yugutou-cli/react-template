@@ -1,36 +1,30 @@
-import { createRootRoute, Link, Outlet } from '@tanstack/react-router'
+import { createRootRoute, Outlet } from '@tanstack/react-router'
 import { TanStackRouterDevtools } from '@tanstack/react-router-devtools'
 
 export const Route = createRootRoute({
   component: RootComponent,
+  errorComponent: RootErrorComponent,
 })
 
 function RootComponent() {
   return (
     <>
-      <div className="p-2 flex gap-2 text-lg">
-        <Link
-          to="/"
-          activeProps={{
-            className: 'font-bold',
-          }}
-          activeOptions={{ exact: true }}
-        >
-          Home
-        </Link>
-        {' '}
-        <Link
-          to="/count"
-          activeProps={{
-            className: 'font-bold',
-          }}
-        >
-          Count
-        </Link>
-      </div>
-      <hr />
       <Outlet />
       <TanStackRouterDevtools position="bottom-right" />
     </>
+  )
+}
+
+function RootErrorComponent(...args: any[]) {
+  return (
+    <div>
+      <h1>Root Error</h1>
+      <p>Something went wrong at the root level.</p>
+      {
+        args.map((arg, index) => (
+          <pre key={index}>{JSON.stringify(arg)}</pre>
+        ))
+      }
+    </div>
   )
 }

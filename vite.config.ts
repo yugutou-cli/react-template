@@ -12,6 +12,13 @@ const config = defineConfig({
     tsconfigPaths: true,
   },
   plugins: [
+    devtools(),
+    tailwindcss(),
+    tanstackRouter({
+      target: 'react',
+      autoCodeSplitting: true,
+      routesDirectory: './src/pages',
+    }),
     AutoImport({
       imports: [
         'react',
@@ -22,13 +29,6 @@ const config = defineConfig({
       ],
       dirs: ['./src/stores', './src/utils'],
       dts: './src/types/auto-imports.d.ts',
-    }),
-    devtools(),
-    tailwindcss(),
-    tanstackRouter({
-      target: 'react',
-      autoCodeSplitting: true,
-      routesDirectory: './src/pages',
     }),
     react(),
     babel({ presets: [reactCompilerPreset()] }),

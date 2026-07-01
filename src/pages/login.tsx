@@ -1,6 +1,4 @@
-import { createFileRoute, redirect, useRouter } from '@tanstack/react-router'
-import { useState } from 'react'
-import { useAuthStore } from '@/stores/auth'
+import { createFileRoute, redirect } from '@tanstack/react-router'
 
 export const Route = createFileRoute('/login')({
   beforeLoad: () => {
@@ -21,7 +19,7 @@ function LoginPage() {
   const [loading, setLoading] = useState(false)
   const [showPassword, setShowPassword] = useState(false)
 
-  async function handleSubmit(e: React.FormEvent) {
+  async function handleSubmit(e: React.SyntheticEvent) {
     e.preventDefault()
     setError('')
     setLoading(true)
@@ -47,7 +45,7 @@ function LoginPage() {
           <img
             src="/yugutou_logo.png"
             alt="鱼骨"
-            className="size-14 object-contain"
+            className="size-14 object-contain bg-white"
           />
           <h1 className="mt-4 text-2xl font-semibold tracking-tight text-[#fafafa]">
             鱼骨
