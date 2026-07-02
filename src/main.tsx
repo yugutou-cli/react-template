@@ -1,7 +1,9 @@
+import './styles/styles.css'
 import { createRouter, RouterProvider } from '@tanstack/react-router'
 import ReactDOM from 'react-dom/client'
 import { routeTree } from './routeTree.gen'
-import './styles/styles.css'
+
+const a = import('@babel/core')
 
 // Set up a Router instance
 const router = createRouter({

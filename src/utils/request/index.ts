@@ -1,10 +1,10 @@
 import type { ApiResponse } from './type'
 
-import { redirect } from '@tanstack/react-router'
-import { createAlova } from 'alova'
-import adapterFetch from 'alova/fetch'
-import reactHook from 'alova/react'
 import { ContentTypeEnum, ResultEnum, ShowMessage } from './type'
+import adapterFetch from 'alova/fetch'
+import { createAlova } from 'alova'
+import reactHook from 'alova/react'
+import { redirect } from '@tanstack/react-router'
 
 export const baseURL = import.meta.env.VITE_BASE_URL
 

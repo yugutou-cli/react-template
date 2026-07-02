@@ -1,4 +1,3 @@
-/* eslint-disable */
 /* prettier-ignore */
 // @ts-nocheck
 // noinspection JSUnusedGlobalSymbols
@@ -60,9 +59,10 @@ declare global {
 // for type re-export
 declare global {
   // @ts-ignore
-  export type { ApiError, ApiResponse } from '../utils/request/type'
-  import('../utils/request/type')
-  // @ts-ignore
   export type { DictObject } from '../hooks/useDict'
-  import('../hooks/useDict')
+  import ('../utils/request/type')
+
+  // @ts-ignore
+  export type { ApiError, ApiResponse } from '../utils/request/type'
+  import ('../hooks/useDict')
 }
