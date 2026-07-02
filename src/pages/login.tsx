@@ -12,7 +12,6 @@ export const Route = createFileRoute('/login')({
 
 const isDev = import.meta.env.DEV
 function LoginPage() {
-  const router = useRouter()
   const login = useAuthStore(s => s.login)
   const [username, setUsername] = useState(isDev ? 'admin' : '')
   const [password, setPassword] = useState(isDev ? 'admin123' : '')

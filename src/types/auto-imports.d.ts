@@ -36,7 +36,7 @@ declare global {
   const useCountStore: typeof import('../stores/count').useCountStore
   const useDebugValue: typeof import('react').useDebugValue
   const useDeferredValue: typeof import('react').useDeferredValue
-  const useDict: typeof import('../hooks/useDict').useDict
+  const useDictItem: typeof import('../hooks/useDict').useDictItem
   const useEffect: typeof import('react').useEffect
   const useEffectEvent: typeof import('react').useEffectEvent
   const useId: typeof import('react').useId

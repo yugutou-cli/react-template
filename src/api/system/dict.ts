@@ -3,5 +3,5 @@ interface DictResult {
   dictValue: string
 }
 export function getDictByTypeApi(dictType: string) {
-  return alovaInstance
+  return alovaInstance.Get<DictResult[]>(dictType)
 }
