@@ -1,16 +1,22 @@
-import type { ApiResponse, RequestSuccessCallbackResult } from './tools/enum'
+import type { ApiResponse } from './type'
 
-import adapterFetch from 'alova/fetch';
+import { redirect } from '@tanstack/react-router'
 import { createAlova } from 'alova'
-import vueHook from 'alova/vue'
-import { ContentTypeEnum, ResultEnum, ShowMessage } from './tools/enum'
+import adapterFetch from 'alova/fetch'
+import reactHook from 'alova/react'
+import { ContentTypeEnum, ResultEnum, ShowMessage } from './type'
 
-export const baseURL = import.meta.env.BASE_URL
+export const baseURL = import.meta.env.VITE_BASE_URL
 
+/**
+ * method.meta 类型扩展在 types/typings.d.ts
+ */
 export const alovaInstance = createAlova({
   baseURL,
   requestAdapter: adapterFetch(),
-  statesHook: vueHook,
+  statesHook: reactHook,
+  timeout: 20000,
+  cacheFor: null,
   beforeRequest: (method) => {
     method.config.headers = {
       ContentType: ContentTypeEnum.JSON,
@@ -19,46 +25,34 @@ export const alovaInstance = createAlova({
     }
 
     if (method.meta?.ignoreAuth !== true) {
-      const { token } = useToken()
+      const token = getToken()
 
       method.config.headers.Authorization = `Bearer ${token}`
     }
   },
-  responded: (response, method) => {
-    const { config } = method
-    const { requestType } = config
+  responded: async (response, method) => {
+    const { meta } = method
 
-    const { error } = useGlobalNotify()
-    const { statusCode, data } = response as RequestSuccessCallbackResult
+    const { data } = await response.json()
 
-    if (requestType === 'upload' || requestType === 'download') {
-      return response
-    }
-
-    if (statusCode !== 200) {
-      const errorMessage = ShowMessage(statusCode) || `HTTP请求错误[${statusCode}]`
-      error(`请求失败, ${errorMessage}`)
+    if (data.code !== 200) {
+      const errorMessage = ShowMessage(data.code) || `HTTP请求错误[${data.code}]`
+      console.error(`请求失败, ${errorMessage}`)
       throw new Error(`${errorMessage}`)
     }
 
     const { code, msg, data: rawData } = data as ApiResponse
+
     if (code !== ResultEnum.Success0 && code !== ResultEnum.Success200) {
-      if (code === ResultEnum.Unauthorized && useCurrentPath() !== import.meta.env.VITE_LOGIN_URL) {
-        uni.reLaunch({ url: import.meta.env.VITE_LOGIN_URL })
+      if (code === ResultEnum.Unauthorized && window.location.pathname !== import.meta.env.VITE_LOGIN_URL) {
+        redirect({ to: import.meta.env.VITE_LOGIN_URL })
       }
-      if (config.meta?.hideNotify !== true) {
-        error(`${data.msg}`)
+      if (meta?.hideNotify !== true) {
+        console.error(`${msg}`)
       }
-      throw new Error(`请求失败 ${code}, ${data.msg}`)
+      throw new Error(`请求失败 ${code}, ${msg}`)
     }
 
-    return (method.meta?.originalRes ? data : rawData) as ApiResponse
+    return (meta?.originalRes ? data : rawData) as ApiResponse
   },
-  timeout: 20000,
-  cacheFor: null,
 })
-
-/** 兼容上游命名风格 */
-export const http = alovaInstance
-
-export default alovaInstance

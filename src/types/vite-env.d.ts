@@ -20,6 +20,12 @@ interface ImportMetaEnv {
 
   // 基础路径
   readonly VITE_BASE_URL: string
+
+  // 登录页 url
+  VITE_LOGIN_URL: string
+
+  // sessionStorage key
+  VITE_TOKEN_KEY: string
 }
 
 interface ImportMeta {

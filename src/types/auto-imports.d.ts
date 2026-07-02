@@ -6,18 +6,28 @@
 // biome-ignore lint: disable
 export {}
 declare global {
-  const  useNavigate: typeof import('@tanstack/react-router')[' useNavigate']
   const Activity: typeof import('react').Activity
+  const ApiError: typeof import('../utils/request/type').ApiError
+  const ContentTypeEnum: typeof import('../utils/request/type').ContentTypeEnum
   const Fragment: typeof import('react').Fragment
+  const ResultEnum: typeof import('../utils/request/type').ResultEnum
+  const ShowMessage: typeof import('../utils/request/type').ShowMessage
   const Suspense: typeof import('react').Suspense
+  const alovaInstance: typeof import('../utils/request/index').alovaInstance
+  const baseURL: typeof import('../utils/request/index').baseURL
   const cache: typeof import('react').cache
   const cacheSignal: typeof import('react').cacheSignal
   const createContext: typeof import('react').createContext
   const createRef: typeof import('react').createRef
   const forwardRef: typeof import('react').forwardRef
+  const getToken: typeof import('../utils/handleToken').getToken
+  const helloUtils: typeof import('../utils/test-autoimport').helloUtils
   const lazy: typeof import('react').lazy
   const memo: typeof import('react').memo
+  const removeToken: typeof import('../utils/handleToken').removeToken
+  const setToken: typeof import('../utils/handleToken').setToken
   const startTransition: typeof import('react').startTransition
+  const stringifyQuery: typeof import('../utils/request/tools/queryString').stringifyQuery
   const use: typeof import('react').use
   const useActionState: typeof import('react').useActionState
   const useAuthStore: typeof import('../stores/auth').useAuthStore
@@ -26,6 +36,7 @@ declare global {
   const useCountStore: typeof import('../stores/count').useCountStore
   const useDebugValue: typeof import('react').useDebugValue
   const useDeferredValue: typeof import('react').useDeferredValue
+  const useDict: typeof import('../hooks/useDict').useDict
   const useEffect: typeof import('react').useEffect
   const useEffectEvent: typeof import('react').useEffectEvent
   const useId: typeof import('react').useId
@@ -43,5 +54,15 @@ declare global {
   const useSearch: typeof import('@tanstack/react-router').useSearch
   const useState: typeof import('react').useState
   const useSyncExternalStore: typeof import('react').useSyncExternalStore
+  const useToken: typeof import('../utils/handleToken').useToken
   const useTransition: typeof import('react').useTransition
+}
+// for type re-export
+declare global {
+  // @ts-ignore
+  export type { ApiError, ApiResponse } from '../utils/request/type'
+  import('../utils/request/type')
+  // @ts-ignore
+  export type { DictObject } from '../hooks/useDict'
+  import('../hooks/useDict')
 }

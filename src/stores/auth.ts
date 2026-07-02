@@ -14,13 +14,17 @@ export const useAuthStore = create<AuthState>()(
       login: async (username, password) => {
         await new Promise(r => setTimeout(r, 300))
         if (username === 'admin' && password === 'admin123') {
+          setToken('xxxx')
           set({ user: { username } })
         }
         else {
           throw new Error('用户名或密码错误')
         }
       },
-      logout: () => set({ user: null }),
+      logout: () => {
+        removeToken()
+        set({ user: null })
+      },
     }),
     { name: 'auth-storage' },
   ),
