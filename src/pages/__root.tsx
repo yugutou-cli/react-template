@@ -1,5 +1,6 @@
+import { TanStackDevtools } from '@tanstack/react-devtools'
 import { createRootRoute, Outlet } from '@tanstack/react-router'
-import { TanStackRouterDevtools } from '@tanstack/react-router-devtools'
+import { TanStackRouterDevtoolsPanel } from '@tanstack/react-router-devtools'
 
 export const Route = createRootRoute({
   component: RootComponent,
@@ -7,10 +8,19 @@ export const Route = createRootRoute({
 })
 
 function RootComponent() {
+  const router = useRouter()
+
   return (
     <>
       <Outlet />
-      <TanStackRouterDevtools position="bottom-right" />
+      <TanStackDevtools
+        plugins={[
+          {
+            name: 'TanStack Router',
+            render: <TanStackRouterDevtoolsPanel router={router} />,
+          },
+        ]}
+      />
     </>
   )
 }

@@ -18,13 +18,6 @@ declare module '@tanstack/react-router' {
   }
 }
 
-const a = [
-  1, 2, 3, 34, 4,
-  5, 6, 67, 7, 8,
-]
-
-console.log('sss ')
-
 const rootElement = document.getElementById('app')!
 
 if (!rootElement.innerHTML) {

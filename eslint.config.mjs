@@ -7,12 +7,17 @@ export default antfu({
         ArrayExpression: false,
         ArrayPattern: false,
       }],
+      'react-refresh/only-export-components': 'off',
     },
   },
   typescript: true,
   stylistic: {
     overrides: {
       'array-element-newline': 'off',
+      'style/jsx-self-closing-comp': ['error', {
+        component: true,
+        html: true,
+      }],
     },
   },
 }, [{
