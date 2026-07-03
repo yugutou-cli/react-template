@@ -1,5 +1,6 @@
 import { mkdir, writeFile } from 'node:fs/promises'
 import { dirname } from 'node:path'
+import { inspect } from 'node:util'
 
 import { antfu, jsonc } from '@antfu/eslint-config'
 
@@ -144,7 +145,10 @@ const oxlintrc = await jsonc({
 })
 
 const b = await antfu()
-console.log(b)
+console.log(inspect(b, {
+  depth: 4,
+  colors: true,
+}))
 console.log('==========================')
 
 const file = 'antfu.json'

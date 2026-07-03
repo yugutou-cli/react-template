@@ -1985,7 +1985,7 @@
         }
       ],
       "prefer-const": [
-        "warn",
+        "error",
         {
           "destructuring": "all",
           "ignoreReadBeforeAssign": true
@@ -2007,7 +2007,7 @@
         "error",
         "never"
       ],
-      "unused-imports/no-unused-imports": "warn",
+      "unused-imports/no-unused-imports": "error",
       "unused-imports/no-unused-vars": [
         "error",
         {
@@ -53219,7 +53219,7 @@
       ],
       "test/no-identical-title": "error",
       "test/no-import-node-test": "error",
-      "test/no-only-tests": "warn",
+      "test/no-only-tests": "error",
       "test/prefer-hooks-in-order": "error",
       "test/prefer-lowercase-title": "error",
       "antfu/no-top-level-await": "off",
