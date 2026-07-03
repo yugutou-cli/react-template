@@ -47,7 +47,7 @@ function LoginPage() {
           <img
             src="/yugutou_logo.png"
             alt="鱼骨"
-            className="size-14 object-contain bg-white"
+            className="size-14 bg-white object-contain"
           />
           <h1 className="mt-4 text-2xl font-semibold tracking-tight text-[#fafafa]">
             鱼骨
@@ -59,29 +59,29 @@ function LoginPage() {
 
         <div className="mt-10 space-y-5">
           <div className="relative">
-            <span className="iconify-[mdi--account-outline] absolute left-3 top-1/2 size-5 -translate-y-1/2 text-[#a1a1aa]" />
+            <span className="absolute top-1/2 left-3 iconify-[mdi--account-outline] size-5 -translate-y-1/2 text-[#a1a1aa]" />
             <input
               type="text"
               placeholder="用户名"
               value={username}
               onChange={e => setUsername(e.target.value)}
-              className="h-11 w-full rounded-lg border border-white/10 bg-[#1a1a1a] py-2 pl-10 pr-3 text-[15px] text-[#fafafa] placeholder:text-[#a1a1aa] outline-none transition-colors focus:border-white/40"
+              className="h-11 w-full rounded-lg border border-white/10 bg-[#1a1a1a] py-2 pr-3 pl-10 text-[15px] text-[#fafafa] transition-colors outline-none placeholder:text-[#a1a1aa] focus:border-white/40"
             />
           </div>
 
           <div className="relative">
-            <span className="iconify-[mdi--lock-outline] absolute left-3 top-1/2 size-5 -translate-y-1/2 text-[#a1a1aa]" />
+            <span className="absolute top-1/2 left-3 iconify-[mdi--lock-outline] size-5 -translate-y-1/2 text-[#a1a1aa]" />
             <input
               type={showPassword ? 'text' : 'password'}
               placeholder="密码"
               value={password}
               onChange={e => setPassword(e.target.value)}
-              className="h-11 w-full rounded-lg border border-white/10 bg-[#1a1a1a] py-2 pl-10 pr-10 text-[15px] text-[#fafafa] placeholder:text-[#a1a1aa] outline-none transition-colors focus:border-white/40"
+              className="h-11 w-full rounded-lg border border-white/10 bg-[#1a1a1a] py-2 pr-10 pl-10 text-[15px] text-[#fafafa] transition-colors outline-none placeholder:text-[#a1a1aa] focus:border-white/40"
             />
             <button
               type="button"
               onClick={() => setShowPassword(!showPassword)}
-              className="absolute right-3 top-1/2 -translate-y-1/2 text-[#a1a1aa] transition-colors hover:text-[#fafafa]"
+              className="absolute top-1/2 right-3 -translate-y-1/2 text-[#a1a1aa] transition-colors hover:text-[#fafafa]"
               aria-label={showPassword ? '隐藏密码' : '显示密码'}
             >
               <span className={`size-5 ${showPassword ? 'iconify-[mdi--eye-off]' : 'iconify-[mdi--eye]'}`} />
